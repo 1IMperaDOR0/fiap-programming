@@ -1,0 +1,30 @@
+div:nth-child(even) {
+    background-color: yellow;
+}
+
+div:first-child {
+    background-color: aqua;
+}
+
+p::first-letter {
+    color: #f00;
+}
+
+input[type=email]:focus {
+    background-color: aqua;
+    color: #f00;
+}
+
+button:hover {
+    background-color: aqua;
+    color: #f00;
+    cursor: pointer;
+}
+
+a::after {
+    content: "Conteúdo depois"
+}
+
+a::before {
+    content: "Conteúdo antes";
+}

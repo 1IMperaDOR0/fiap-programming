@@ -1,0 +1,52 @@
+body {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+p {
+    padding: 20px;
+    margin: 0;
+}
+
+.container-1 {
+    flex: 0.3;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.container-2 {
+    flex: 1;
+    min-height: auto;
+}
+
+header {
+    background-color: blue;
+    height: 80px;
+}
+main {
+    display: flex;
+}
+.navegacao {
+    background-color: orangered;
+    height: 100%;
+}
+.conteudo {
+    background-color: purple;
+    flex: 1;
+    position: relative;
+}
+.barra {
+    background-color: orange;
+    flex: 0.3;
+    min-height: 75vh;
+    position: relative;
+}
+footer {
+    background-color: blue;
+    height: 80px;
+}

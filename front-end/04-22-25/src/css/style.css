@@ -1,0 +1,78 @@
+div:hover {
+    color: orange;
+}
+
+a:active {
+    color: aqua;
+}
+
+a:visited {
+    color: red;
+}
+
+input:focus {
+    background-color: yellow;
+}
+
+li:nth-child(even) {
+    color: #0f0;
+}
+
+li:nth-child(odd) {
+    color: #fafb;
+}
+
+li:first-child {
+    color: orange;
+}
+
+li:last-child {
+    color: red;
+}
+
+li:not(.not) {
+    color: #f00;
+}
+
+input[type=radio]:checked {
+    margin-left: 25px;
+}
+
+input[type=checkbox]:checked {
+    margin-left: 25px;
+}
+
+option:checked {
+    color: #f00;
+}
+
+input[type=email]:invalid {
+    background-color: #f00;
+}
+
+input[type=email]:valid {
+    background-color: #0f0;
+}
+
+::placeholder {
+    color: #f00;
+}
+
+p::first-letter {
+    color: red;
+    text-transform: uppercase;
+}
+
+p::first-line {
+    color: blue;
+}
+
+p::selection {
+    color: #f00;
+    background-color: #0f0;
+}
+
+::marker {
+    color: #0f0;
+    font-size: 25px;
+}
