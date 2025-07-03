@@ -35,6 +35,24 @@ void main(List<String> arguments) {
     double divsao = n1 / n2;
     print('O valor da divisão é $divsao.');
   }
+
+  void calcular() {
+    switch(operacao) {
+      case '1':
+      soma();
+
+      case '2':
+      menos();
+
+      case '3':
+      mult();
+
+      case '4':
+      divisao();
+
+      break;
+    }
+  }
   
   print('Digite o primeiro valor:');
   String? entrada = stdin.readLineSync();
@@ -42,6 +60,15 @@ void main(List<String> arguments) {
   if(entrada != null) {
     if(entrada != "") {
       n1 = double.parse(entrada);
+    }
+  }
+
+  print('Qual operação você vai fazer? (Digite o número que corresponda a sua escolha)\n1. adição;\n2. subtração;\n3. multiplicação;\n4. divisão.');
+  entrada = stdin.readLineSync();
+
+  if(entrada != null) {
+    if(entrada != "") {
+      operacao = entrada;
     }
   }
 
@@ -56,30 +83,5 @@ void main(List<String> arguments) {
 
   print('Os valores digitados foram $n1 e $n2.');
 
-  print('Qual operação você vai fazer? (Digite o número que corresponda a sua escolha)\n1. adição;\n2. subtração;\n3. multiplicação;\n4. divisão.');
-  entrada = stdin.readLineSync();
-
-  if(entrada != null) {
-    if(entrada != "") {
-      operacao = entrada;
-    }
-  }
-
-  switch(operacao) {
-    case '1':
-    soma();
-
-    case '2':
-    menos();
-
-    case '3':
-    mult();
-
-    case '4':
-    divisao();
-
-    break;
-  }
-
-  
+  calcular();
 }
