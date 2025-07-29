@@ -1,5 +1,91 @@
-import 'package:meu_app/meu_app.dart' as meu_app;
+import 'dart:io';
 
 void main(List<String> arguments) {
-  print('Hello world: ${meu_app.calculate()}!');
+  List<String> notas = <String>[];
+
+  menu(notas);
+}
+
+String getComando() {
+  print("Digite um comando:\n1. Adicionar nota;\n2. Listar notas;\n3. Sair.");
+
+  String? comando = "";
+
+  comando = stdin.readLineSync();
+
+  return comando!;
+}
+
+List <String> adicionaNota(List<String> notas) {
+  print("Escreva uma nota:");
+  String? nota = "";
+
+  nota = stdin.readLineSync();
+
+  if(nota == null || nota == "") {
+    print("Não é possível escrever uma nota vazia.");
+    adicionaNota(notas);
+  }
+
+  notas.add(nota!);
+
+  return notas;
+}
+
+void listarNotas(List<String> notas) {
+  print("Suas notas:");
+  for(var i = 0; i < notas.length; i++) {
+    print("${i + 1}. ${notas[i]}");
+  }
+}
+
+void menu(List<String> notas) {
+  print("");
+  asciiArt();
+  print("");
+  String comando = getComando();
+  print("");
+
+  switch(comando) {
+    case '1':
+    adicionaNota(notas);
+    menu(notas);
+
+    case '2':
+    listarNotas(notas);
+    menu(notas);
+
+    case '3':
+    print("Saindo...");
+    
+    default:
+    print("Comando inválido.");
+    menu(notas);
+  }
+}
+
+// https://patorjk.com/software/taag/#p=display&c=echo&f=Alpha&t=Notas
+void asciiArt() {
+  print("           _____                   _______               _____                    _____                    _____           ");
+  print("          /|    |                 /::|    |             /|    |                  /|    |                  /|    |          ");
+  print("         /::|____|               /::::|    |           /::|    |                /::|    |                /::|    |         ");
+  print("        /::::|   |              /::::::|    |          |:::|    |              /::::|    |              /::::|    |        ");
+  print("       /:::::|   |             /::::::::|    |          |:::|    |            /::::::|    |            /::::::|    |       ");
+  print("      /::::::|   |            /:::/--|:::|    |          |:::|    |          /:::/|:::|    |          /:::/|:::|    |      ");
+  print("     /:::/|::|   |           /:::/    |:::|    |          |:::|    |        /:::/__|:::|    |        /:::/__|:::|    |     ");
+  print("    /:::/ |::|   |          /:::/    / |:::|    |         /::::|    |      /::::|   |:::|    |       |:::|   |:::|    |    ");
+  print("   /:::/  |::|   | _____   /:::/____/   |:::|____|       /::::::|    |    /::::::|   |:::|    |    ___|:::|   |:::|    |   ");
+  print("  /:::/   |::|   |/|    | |:::|    |     |:::|    |     /:::/|:::|    |  /:::/|:::|   |:::|    |  /|   |:::|   |:::|    |  ");
+  print(" /:: /    |::|   /::|____||:::|____|     |:::|    |    /:::/  |:::|____|/:::/  |:::|   |:::|____|/::|   |:::|   |:::|____| ");
+  print(" |::/    /|::|  /:::/    / |:::|    |   /:::/    /    /:::/    |::/    /|::/    |:::|  /:::/    /|:::|   |:::|   |::/    / ");
+  print("  |/____/ |::| /:::/    /   |:::|    | /:::/    /    /:::/    / |/____/  |/____/ |:::|/:::/    /  |:::|   |:::|   |/____/  ");
+  print("          |::|/:::/    /     |:::|    /:::/    /    /:::/    /                    |::::::/    /    |:::|   |:::|    |      ");
+  print("          |::::::/    /       |:::|__/:::/    /    /:::/    /                      |::::/    /      |:::|   |:::|____|     ");
+  print("          |:::::/    /         |::::::::/    /     |::/    /                       /:::/    /        |:::|  /:::/    /     ");
+  print("          |::::/    /           |::::::/    /       |/____/                       /:::/    /          |:::|/:::/    /      ");
+  print("          /:::/    /             |::::/    /                                     /:::/    /            |::::::/    /       ");
+  print("         /:::/    /               |::/    /                                     /:::/    /              |::::/    /        ");
+  print("         |::/    /                 --____/                                      |::/    /                |::/    /         ");
+  print("          |/____/                                                                |/____/                  |/____/          ");
+  print("                                                                                                                           ");
 }
