@@ -158,15 +158,19 @@ void main(List<String> arguments) {
           case "deposito":
             deposito += valor;
             print("Operação escolhida: $operacao, Valor: R\$ ${deposito.toStringAsFixed(2)}.");
+            break;
           case "retirada":
             retirada += valor;
             print("Operação escolhida: $operacao, Valor: R\$ ${retirada.toStringAsFixed(2)}.");
+            break;
           case "transferencia":
             transferencia += valor;
             print("Operação escolhida: $operacao, Valor: R\$ ${transferencia.toStringAsFixed(2)}.");
+            break;
           case "pagamento":
             pagamento += valor;
             print("Operação escolhida: $operacao, Valor: R\$ ${pagamento.toStringAsFixed(2)}.");
+            break;
         }
       } else {
         print("Valor inválido! Tente novamente.");
