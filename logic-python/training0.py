@@ -154,6 +154,82 @@
 #     print(f'Muito obrigado, {cliente}, pela preferência! 🍷')
 
 # Tentativa 3
+# def verifica_numero(msg):
+#     numero = input(msg)
+
+#     while not numero.isnumeric():
+#         numero = input(f'Caractere inválido! {msg}')
+#     numero = int(numero)
+
+#     return numero
+
+
+# def verifica_opcao(msg, lista):
+#     opcao = input(msg)
+
+#     while not opcao in lista:
+#         opcao = input(f'Opção inválida! {msg}')
+
+#     return opcao
+
+
+# cliente = input('Olá! Digite seu nome:\n-> ')
+# print(f'Seja bem-vindo(a) {cliente} a Vinheria Agnello!')
+
+# ano = verifica_numero('Por favor informe o seu ano de nascimento:\n-> ')
+
+# idade = 2025 - ano
+
+# if idade < 18:
+#     print('Que feio! Venda de bebidas alcoolicas é proibida para menores de idade!')
+# else:
+#     endereco = input('Qual é o seu endereço?\n-> ')
+
+#     vinhos = ['Vinho Legalzinho', 'Vinho Legal', 'Vinho Bom', 'Vinho Ótimo']
+#     precos = [20, 40, 60, 80, 100]
+#     qtds = [0, 0, 0, 0, 0]
+
+#     total = 0
+
+#     while True:
+#         print('Aqui está o nosso catálogo de vinhos:')
+#         for i in range(len(vinhos)):
+#             print(f'{i + 1}. {vinhos[i]} - R$ {precos[i]}')
+
+#         escolha = verifica_numero('Digite o número correspondente ao vinho que você deseja:\n-> ')
+
+#         while escolha < 1 or escolha > len(vinhos):
+#             escolha = verifica_numero('Digite o número correspondente ao vinho que você deseja:\n-> ')
+
+#         index = escolha - 1
+#         escolha = vinhos[index]
+#         preco = precos[index]
+
+#         qtd = verifica_numero(f'A sua escolha foi {escolha}! Quantos você deseja?\n-> ')
+
+#         qtds[index] += qtd
+
+#         total += preco * qtd
+
+#         continuar = verifica_opcao('Você quer continuar comprando? (s/n)\n-> ', ['s', 'n'])
+
+#         if continuar == 'n':
+#             break
+
+#     frete = 0
+
+#     if total < 500:
+#         frete = 15
+
+#     total += frete
+
+#     print('Resumo da compra:')
+#     for i in range(len(vinhos)):
+#         print(f'{qtds[i]} unidades de {vinhos[i]}.')
+
+#     print(f'Frete: R$ {frete}\nTotal (com frete): R$ {total}\nSeu pedido vai ser entrege para {endereco}.\nObrigado {cliente} pela preferência.')
+
+# Tentativa de 4
 def verifica_numero(msg):
     numero = input(msg)
 
@@ -163,7 +239,6 @@ def verifica_numero(msg):
 
     return numero
 
-
 def verifica_opcao(msg, lista):
     opcao = input(msg)
 
@@ -172,6 +247,10 @@ def verifica_opcao(msg, lista):
 
     return opcao
 
+def achar_indice(elem, lista):
+    for i in range(len(lista)):
+        if lista[i] == elem:
+            return i
 
 cliente = input('Olá! Digite seu nome:\n-> ')
 print(f'Seja bem-vindo(a) {cliente} a Vinheria Agnello!')
@@ -187,7 +266,8 @@ else:
 
     vinhos = ['Vinho Legalzinho', 'Vinho Legal', 'Vinho Bom', 'Vinho Ótimo']
     precos = [20, 40, 60, 80, 100]
-    qtds = [0, 0, 0, 0]
+    qtds = [0, 0, 0, 0, 0]
+    posicao = ['1', '2', '3', '4', '5']
 
     total = 0
 
@@ -196,12 +276,9 @@ else:
         for i in range(len(vinhos)):
             print(f'{i + 1}. {vinhos[i]} - R$ {precos[i]}')
 
-        escolha = verifica_numero('Digite o número correspondente ao vinho que você deseja:\n-> ')
+        escolha = verifica_opcao('Digite o número correspondente ao vinho que você deseja:\n-> ', num)
 
-        while escolha < 1 or escolha > len(vinhos):
-            escolha = verifica_numero('Digite o número correspondente ao vinho que você deseja:\n-> ')
-
-        index = escolha - 1
+        index = achar_indice(escolha, posicao)
         escolha = vinhos[index]
         preco = precos[index]
 

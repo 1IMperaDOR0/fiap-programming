@@ -17,6 +17,9 @@ void main() {
   }
   contaLucas.saldo = double.parse("3036");
   contaPaulo.saldo = 1518;
+  double valor = 100;
+  contaGuilherme.enviar(valor);
+  contaGuilherme.receber(200);
 
   for(Conta conta in contas) {
     print("");
@@ -29,4 +32,12 @@ class Conta {
   double saldo;
 
   Conta(this.titular, this.saldo);
+
+  void receber(double valor) {
+    saldo += valor; 
+  }
+
+  void enviar(double valor) {
+    saldo -= valor;
+  }
 }
