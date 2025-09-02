@@ -13,24 +13,21 @@ print(matriz[0][2])
 
 for i in range(len(matriz)):
     for j in range(len(matriz[0])):
-        print(f"matriz[{i}][{j}]{matriz[i][j]}")
+        print(f"matriz[{i}][{j}] = {matriz[i][j]}")
 '''
 
 def mostra_matriz(matriz):
     for linha in matriz:
         print(linha)
-
     return
 
 def cria_matriz(linhas, colunas):
     matriz = []
-
     for i in range(linhas):
         linha = []
         for j in range(colunas):
             linha.append(0)
         matriz.append(linha)
-
     return matriz
 
 a = cria_matriz(100,  100)

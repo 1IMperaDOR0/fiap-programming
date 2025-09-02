@@ -9,7 +9,6 @@ matriz = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]]
             print(f'Matriz{i}{j} = {matriz[i][j]}')
     return '''
 
-
 '''print(cria_matriz(4, 4))'''
 
 def mostra_matriz(matriz):
@@ -19,12 +18,8 @@ def mostra_matriz(matriz):
 
 #===========Mostrar a matriz==========#
 
-
-
 '''imagem = cria_matriz(10, 10)'''
 '''print(mostra_matriz(imagem))'''
-
-
 
 def cria_diagonal_bom(linhas,colunas):
     diagonal = cria_matriz(linhas,colunas)
