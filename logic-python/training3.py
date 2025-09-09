@@ -104,3 +104,24 @@ for i in range(len(matriz_6)):
 
 show_matriz(matriz_6)
 plotar_matriz(matriz_6)
+
+# Exercício 9
+cinema = build_matriz(4, 4)
+show_matriz(cinema)
+
+for i in range(len(cinema)):
+    for j in range(i, len(cinema[i])):
+        aux = cinema[j][i]
+        cinema[i][j] = aux
+        cinema[j][i] = i
+
+show_matriz(cinema)
+
+for i in range(len(cinema)):
+    for j in range(len(cinema[i])):
+        if i%2 == j%2:
+            cinema[i][j] = "vaga"
+        else:
+            cinema[i][j] = "ocupada"
+
+show_matriz(cinema)
