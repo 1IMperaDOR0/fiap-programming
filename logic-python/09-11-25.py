@@ -1,4 +1,4 @@
-# Look Up Table
+# Look Up build_Table
 
 # dic = {'chave': "valor"}
 # print(dic['chave'])
@@ -111,7 +111,7 @@ carros = {
     'ano': [2014, 2018, 1970, 2005]
 }
 
-def table(dic, title, info_1, info_2, info_3, info_4):
+def build_table(dic, title, info_1, info_2, info_3, info_4):
     print("------------------------------------------------------------")
     print(f"-------------------------- {title} --------------------------")
     print("------------------------------------------------------------")
@@ -121,7 +121,7 @@ def table(dic, title, info_1, info_2, info_3, info_4):
     print()
     return
 
-table(carros, "CARROS", 'nome', 'ano', 'preco', 'portas')
+build_table(carros, "CARROS", 'nome', 'ano', 'preco', 'portas')
 
 carro = forca_opcao("Digite um carro da lista acima:\n-> ", carros['nome'])
 
@@ -184,7 +184,7 @@ if resposta == 's':
 
     print()
 
-    table(carros, "CARROS", 'nome', 'ano', 'preco', 'portas')
+    build_table(carros, "CARROS", 'nome', 'ano', 'preco', 'portas')
 
 # Exercício 6
 resposta = forca_opcao("Você gostaria de remover um carro da lista? (s/n)\n-> ", opcoes)
@@ -202,7 +202,7 @@ if resposta == 's':
 
     print()
 
-    table(carros, "CARROS", 'nome', 'ano', 'preco', 'portas')
+    build_table(carros, "CARROS", 'nome', 'ano', 'preco', 'portas')
 
 # Exercício 7
 frase = "O bispo de Constantinopla é um bom desconstantinopolitanizador. Quem o desconstantinopolitanizar, um bom desconstantinopolitanizador será."
