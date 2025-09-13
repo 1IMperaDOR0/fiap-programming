@@ -276,7 +276,7 @@ else:
         for i in range(len(vinhos)):
             print(f'{i + 1}. {vinhos[i]} - R$ {precos[i]}')
 
-        escolha = verifica_opcao('Digite o número correspondente ao vinho que você deseja:\n-> ', num)
+        escolha = verifica_opcao('Digite o número correspondente ao vinho que você deseja:\n-> ', posicao)
 
         index = achar_indice(escolha, posicao)
         escolha = vinhos[index]
