@@ -83,161 +83,164 @@
 #         contador[palavra] += 1
 # print(contador)
 
-# # Exercício 1
-# saudacoes = {
-#     'oi': ['olá', 'salve', 'bão'],
-#     'tchau': ['flw', 'tchau']
-# }
+# Exercício 1
+def forca_opcao(msg, opcoes):
+    resposta = input(msg)
+    while not resposta in opcoes:
+        print("Opção inválida!")
+        resposta = input(msg)
+    return resposta
 
-# resposta = input('Diga "oi" ou "tchau":\n-> ')
-# print(saudacoes[resposta][0])
+saudacoes = {
+    'oi': ['olá', 'salve', 'bão'],
+    'tchau': ['flw', 'tchau']
+}
 
-# print()
+opcoes = ["oi", "tchau"]
 
-# # Exercício 2
-# carros = {
-#     'nome': ['polinho turbão manual', 'up', 'kombi', 'uno'],
-#     'portas': [4, 2, 6, 2],
-#     'preco': [1000000, 200, 300, 100],
-#     'ano': [2014, 2018, 1970, 2005]
-# }
+resposta = forca_opcao('Diga "oi" ou "tchau":\n-> ', opcoes)
+print(saudacoes[resposta][0])
 
-# print("-------------------------------------------------")
-# print("-------------------- CARROS ---------------------")
-# print("-------------------------------------------------")
-# print("|   Número   |   Modelo   |   Ano   |   Preço   |")
-# for i in range(len(carros['nome'])):
-#     print(f"{i+1}. {carros['nome'][i]} ({carros['ano'][i]}): R$ {carros['preco'][i]:.2f} - portas: {carros['portas'][i]}")
-# print()
-# carro = input("Digite um carro da lista acima:\n-> ")
+print()
 
-# for i in range(len(carros['nome'])):
-#     if carro == carros['nome'][i]:
-#         print()
-#         print(f"Você escolheu a opção:\n{i+1}. {carros['nome'][i]} ({carros['ano'][i]}): R$ {carros['preco'][i]:.2f} - portas: {carros['portas'][i]}")
+# Exercício 2
+carros = {
+    'nome': ['polinho turbão manual', 'up', 'kombi', 'uno'],
+    'portas': [4, 2, 6, 2],
+    'preco': [1000000, 200, 300, 100],
+    'ano': [2014, 2018, 1970, 2005]
+}
 
-# print()
+def table(dic, title, info_1, info_2, info_3, info_4):
+    print("------------------------------------------------------------")
+    print(f"-------------------------- {title} --------------------------")
+    print("------------------------------------------------------------")
+    print(f"|   Número   |   {info_1}   |   {info_2}   |   {info_3}   |   {info_4}   |")
+    for i in range(len(dic[info_1])):
+        print(f"{i+1}. {dic[info_1][i]} ({dic[info_2][i]}): R$ {dic[info_3][i]:.2f} - portas: {dic[info_4][i]}")
+    print()
+    return
 
-# # Exercício 3
-# index = 0
-# carro_mais_caro = carros['preco'][0]
+table(carros, "CARROS", 'nome', 'ano', 'preco', 'portas')
 
-# for i in range(len(carros['nome'])):
-#     if carros['preco'][i] > carro_mais_caro:
-#         carro_mais_caro = carros['preco'][i]
-#         index = i
-# print(f"O carro mais caro é a opção:\n{index+1}. {carros['nome'][index]} ({carros['ano'][index]}): R$ {carros['preco'][index]:.2f} - portas: {carros['portas'][index]}")
+carro = forca_opcao("Digite um carro da lista acima:\n-> ", carros['nome'])
 
-# print()
+for i in range(len(carros['nome'])):
+    if carro == carros['nome'][i]:
+        print()
+        print(f"Você escolheu a opção:\n{i+1}. {carros['nome'][i]} ({carros['ano'][i]}): R$ {carros['preco'][i]:.2f} - portas: {carros['portas'][i]}")
 
-# # Exercício 4
-# index = 0
-# carro_mais_barato = carros['preco'][0]
+print()
 
-# for i in range(len(carros['nome'])):
-#     if carros['preco'][i] < carro_mais_barato:
-#         carro_mais_barato = carros['preco'][i]
-#         index = i
-# print(f"O carro mais barato é a opção:\n{index+1}. {carros['nome'][index]} ({carros['ano'][index]}): R$ {carros['preco'][index]:.2f} - portas: {carros['portas'][index]}")
+# Exercício 3
+index = 0
+carro_mais_caro = carros['preco'][0]
 
-# print()
+for i in range(len(carros['nome'])):
+    if carros['preco'][i] > carro_mais_caro:
+        carro_mais_caro = carros['preco'][i]
+        index = i
+print(f"O carro mais caro é a opção:\n{index+1}. {carros['nome'][index]} ({carros['ano'][index]}): R$ {carros['preco'][index]:.2f} - portas: {carros['portas'][index]}")
 
-# # Exercício 5
-# opcao = ['s', 'n']
-# resposta = input("Você gostaria de adicionar um carro a lista? (s/n)\n-> ")
+print()
 
-# while not resposta in opcao:
-#     print("Opção inválida!")
-#     resposta = input("Você gostaria de adicionar um carro a lista?\n-> ")
+# Exercício 4
+index = 0
+carro_mais_barato = carros['preco'][0]
 
-# if resposta == 's':
-#     novo_carro = input("Digite o nome do carro:\n-> ")
+for i in range(len(carros['nome'])):
+    if carros['preco'][i] < carro_mais_barato:
+        carro_mais_barato = carros['preco'][i]
+        index = i
+print(f"O carro mais barato é a opção:\n{index+1}. {carros['nome'][index]} ({carros['ano'][index]}): R$ {carros['preco'][index]:.2f} - portas: {carros['portas'][index]}")
 
-#     carros['nome'].append(novo_carro)
+print()
 
-#     portas = input("Digite a quantidade de portas do carro:\n-> ")
-#     portas = int(portas)
-#     carros['portas'].append(portas)
+# Exercício 5
+def forca_numero(msg):
+    resposta = input(msg)
+    while not resposta.isnumeric():
+        print("Opção inválida!")
+        resposta = input(msg)
+    resposta = int(resposta)
+    return resposta
 
-#     preco = input("Digite o preço do carro:\n-> ")
-#     preco = int(preco)
-#     carros['preco'].append(preco)
+opcoes = ['s', 'n']
+resposta = forca_opcao("Você gostaria de adicionar um carro a lista? (s/n)\n-> ", opcoes)
 
-#     ano = input("Digite o ano do carro:\n-> ")
-#     ano = int(ano)
-#     carros['ano'].append(ano)
+if resposta == 's':
+    novo_carro = input("Digite o nome do carro:\n-> ")
 
-#     print("-------------------------------------------------")
-#     print("-------------------- CARROS ---------------------")
-#     print("-------------------------------------------------")
-#     print("|   Número   |   Modelo   |   Ano   |   Preço   |")
-#     for i in range(len(carros['nome'])):
-#         print(f"{i+1}. {carros['nome'][i]} ({carros['ano'][i]}): R$ {carros['preco'][i]:.2f} - portas: {carros['portas'][i]}")
-#     print()
+    carros['nome'].append(novo_carro)
 
-# # Exercício 6
-# resposta = input("Você gostaria de remover um carro da lista? (s/n)\n-> ")
+    portas = forca_numero("Digite a quantidade de portas do carro:\n-> ")
+    carros['portas'].append(portas)
 
-# while not resposta in opcao:
-#     print("Opção inválida!")
-#     resposta = input("Você gostaria de remover um carro da lista?\n-> ")
+    preco = forca_numero("Digite o preço do carro:\n-> ")
+    carros['preco'].append(preco)
 
-# if resposta == 's':
-#     carro = input("Digite o nome do carro:\n-> ")
+    ano = forca_numero("Digite o ano do carro:\n-> ")
+    carros['ano'].append(ano)
 
-#     for i in range(len(carros['nome'])):
-#         if carros['nome'][i] == carro:
-#             carros['portas'].remove(carros['portas'][i])
-#             carros['preco'].remove(carros['preco'][i])
-#             carros['ano'].remove(carros['ano'][i])
+    print()
+
+    table(carros, "CARROS", 'nome', 'ano', 'preco', 'portas')
+
+# Exercício 6
+resposta = forca_opcao("Você gostaria de remover um carro da lista? (s/n)\n-> ", opcoes)
+
+if resposta == 's':
+    carro = input("Digite o nome do carro:\n-> ")
+
+    for i in range(len(carros['nome'])):
+        if carros['nome'][i] == carro:
+            carros['portas'].remove(carros['portas'][i])
+            carros['preco'].remove(carros['preco'][i])
+            carros['ano'].remove(carros['ano'][i])
     
-#     carros['nome'].remove(carro)
+    carros['nome'].remove(carro)
 
-#     print("-------------------------------------------------")
-#     print("-------------------- CARROS ---------------------")
-#     print("-------------------------------------------------")
-#     print("|   Número   |   Modelo   |   Ano   |   Preço   |")
-#     for i in range(len(carros['nome'])):
-#         print(f"{i+1}. {carros['nome'][i]} ({carros['ano'][i]}): R$ {carros['preco'][i]:.2f} - portas: {carros['portas'][i]}")
-#     print()
+    print()
 
-# # Exercício 7
-# frase = "O bispo de Constantinopla é um bom desconstantinopolitanizador. Quem o desconstantinopolitanizar, um bom desconstantinopolitanizador será."
-# frase = frase.lower()
-# frase = frase.replace('.', '')
-# frase = frase.replace(',', '')
-# palavras = frase.split(' ')
+    table(carros, "CARROS", 'nome', 'ano', 'preco', 'portas')
 
-# contador = {}
+# Exercício 7
+frase = "O bispo de Constantinopla é um bom desconstantinopolitanizador. Quem o desconstantinopolitanizar, um bom desconstantinopolitanizador será."
+frase = frase.lower()
+frase = frase.replace('.', '')
+frase = frase.replace(',', '')
+palavras = frase.split(' ')
 
-# for palavra in palavras:
-#     if not palavra in contador.keys():
-#         contador[palavra] = 1
-#     else:
-#         contador[palavra] += 1
-# print(contador)
+contador = {}
 
-# print()
+for palavra in palavras:
+    if not palavra in contador.keys():
+        contador[palavra] = 1
+    else:
+        contador[palavra] += 1
+print(contador)
 
-# # Exercício 8
-# numeros = {
-#     'zero': '0',
-#     'um': '1',
-#     'dois': '2',
-#     'tres': '3',
-#     'quatro': '4',
-#     'cinco': '5',
-#     'seis': '6',
-#     'sete': '7',
-#     'oito': '8',
-#     'nove': '9'
-# }
+print()
 
-# numero = input("Digite seu número de telefone:\n-> ")
-# for key in numeros:
-#     numero = numero.replace(key, numeros[key])
-# numero = numero.replace(' ', '')
-# print(numero)
+# Exercício 8
+numeros = {
+    'zero': '0',
+    'um': '1',
+    'dois': '2',
+    'tres': '3',
+    'quatro': '4',
+    'cinco': '5',
+    'seis': '6',
+    'sete': '7',
+    'oito': '8',
+    'nove': '9'
+}
+
+numero = input("Digite seu número de telefone:\n-> ")
+for key in numeros:
+    numero = numero.replace(key, numeros[key])
+numero = numero.replace(' ', '')
+print(numero)
 
 # Exercício 9 e 10
 dic_1 = {
@@ -253,23 +256,30 @@ dic_2 = {
 }
 
 # Jeito 1
-comuns = []
-nao_comuns = []
+def acha_comuns(dic_1, dic_2):
+    comuns = []
+    for key in dic_1:
+        if key in dic_2.keys():
+            comuns.append(key)
+    return comuns
 
-for key in dic_1:
-    if key in dic_2.keys():
-        comuns.append(key)
+def acha_incomuns(dic_1, dic_2):
+    incomuns = []
+    for key_1 in dic_1:
+        if not key_1 in dic_2.keys():
+            incomuns.append(key_1)
 
-for key_1 in dic_1:
-    if not key_1 in dic_2.keys():
-        nao_comuns.append(key_1)
+    for key_2 in dic_2:
+        if not key_2 in dic_1.keys():
+            incomuns.append(key_2)
 
-for key_2 in dic_2:
-    if not key_2 in dic_1.keys():
-        nao_comuns.append(key_2)
+    return incomuns
+
+comuns = acha_comuns(dic_1, dic_2)
+incomuns = acha_incomuns(dic_1, dic_2)
 
 print("Comuns:", comuns)
-print("Não comuns:", nao_comuns)
+print("Não comuns:", incomuns)
 
 # Jeito 2
 comuns = []
