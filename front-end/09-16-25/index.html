@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR"> 
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // Informa ao Tailwind para usar o modo de classe, ignorando o navegador.
+        tailwind.config = {
+            darkMode: 'class'
+        }
+    </script>
+</head>
+<body class="bg-white dark:bg-gray-900 text-black dark:text-white min-h-screen flex flex-col items-center justify-center">
+
+    <div>
+        <input type="checkbox" id="abrir" class="peer hidden" />
+        <label for="abrir" class="cursor-pointer bg-green-500 text-white px-4 py-2 rounded">Abrir Modal</label>
+
+        <div class="fixed inset-0 bg-black/50 hidden peer-checked:flex items-center justify-center">
+            <div class="bg-white p-6 rounded shadow-md max-w-sm dark:bg-gray-800 dark:text-white">
+                <p>Conteúdo do modal</p>
+                <label for="abrir" class="cursor-pointer mt-4 inline-block bg-red-500 text-white px-4 py-2 rounded">Fechar</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="p-8 max-w-lg mx-auto">
+
+        <input type="radio" id="tab1" name="tabs" class="peer/aba1 hidden" checked />
+        <label for="tab1" class="inline-block cursor-pointer px-4 py-2 text-gray-500
+                                hover:text-gray-700
+                                peer-checked/aba1:text-blue-600 peer-checked/aba1:border-b-2 peer-checked/aba1:border-blue-600">
+            Aba 1
+        </label>
+
+        <input type="radio" id="tab2" name="tabs" class="peer/aba2 hidden" />
+        <label for="tab2" class="inline-block cursor-pointer px-4 py-2 text-gray-500
+                                hover:text-gray-700
+                                peer-checked/aba2:text-blue-600 peer-checked/aba2:border-b-2 peer-checked/aba2:border-blue-600">
+            Aba 2
+        </label>
+
+        <div class="w-full border-t border-gray-300 -mt-px"></div>
+
+        <div class="py-4 hidden peer-checked/aba1:block">
+            <p class="text-lg font-semibold">Conteúdo da Aba 1 🚀</p>
+            <p>Agora este conteúdo é um irmão direto do input. A relação `peer` funciona.</p>
+        </div>
+        
+        <div class="py-4 hidden peer-checked/aba2:block">
+            <p class="text-lg font-semibold">Conteúdo da Aba 2 ✨</p>
+            <p>Este também é um irmão do seu respectivo input e agora aparece corretamente.</p>
+        </div>
+
+    </div>
+
+    <button id="toggle-dark" class="mb-6 px-4 py-2 bg-blue-500 text-white rounded peer focus:ring-4 hover:bg-blue-700 active:bg-blue-900">
+        Alternar Dark Mode
+    </button>
+
+    <div class="p-6 rounded bg-gray-100 dark:bg-gray-800">
+        <p>Este card muda com o dark mode 🌙</p>
+    </div>
+
+    <script>
+        const btn = document.getElementById('toggle-dark');
+        btn.addEventListener('click', () => {
+        document.documentElement.classList.toggle('dark');
+        });
+    </script>
+</body>
+</html>
