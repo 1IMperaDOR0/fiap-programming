@@ -1,4 +1,4 @@
-/*Link do projeto: https://wokwi.com/projects/430531208183426049*/
+/* Link do projeto: https://wokwi.com/projects/430531208183426049 */
 
 #include <DHT.h>
 #include <LiquidCrystal_I2C.h>
