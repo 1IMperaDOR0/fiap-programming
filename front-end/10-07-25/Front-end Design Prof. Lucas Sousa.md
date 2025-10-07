@@ -1,4 +1,4 @@
-# Aula 20 - Componentes Avançados com Tailwind + React
+# Componentes Avançados com Tailwind + React
 
 ## 🎯 Objetivos da Aula
 
