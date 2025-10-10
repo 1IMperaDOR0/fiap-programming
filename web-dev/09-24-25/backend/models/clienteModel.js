@@ -6,4 +6,3 @@ let clientes = [
 
 // Exportamos a lista para que outros arquivos possam acessá-la
 module.exports = clientes;
-

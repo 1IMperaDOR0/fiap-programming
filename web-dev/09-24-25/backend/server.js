@@ -1,7 +1,7 @@
 // Criação do framework express, que facilita criar um servidor HTTP no Node.js
 const express = require("express");
 
-// Importa o cors que irános possibilitar que o frontend, vulgo projeto react, possa se comunicar com o banckend sem bloqueios
+// Importa o cors que irá nos possibilitar que o frontend, vulgo projeto react, possa se comunicar com o banckend sem bloqueios
 const cors = require("cors");
 
 // Cria a aplicação express, que será o nosso servidor
