@@ -32,11 +32,10 @@ print(ordena_lista(livros))
 n = 25
 fim = n
 ini = 0
-chute = (ini + fim) / 2
-print(chute)
-while chute != n:
+while (fim - ini) > 0.000001:
     chute = (ini + fim) / 2
     if chute**2 > n:
         fim = chute
     else:
         ini = chute
+print(chute)
