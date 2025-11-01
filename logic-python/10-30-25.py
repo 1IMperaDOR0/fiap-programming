@@ -1,5 +1,12 @@
 import time
 
+def forca_numero(msg):
+    n = input(msg)
+    if not n.isnumeric():
+        print("Inválido!")
+        n = forca_numero(msg)
+    return int(n)
+
 # Exercício 1
 for i in range(10, 0, -1):
     print(i)
@@ -25,7 +32,7 @@ caracteres = {
     61: '9', 62: '!', 63: '@', 64: '#', 65: '$', 66: '%', 67: '&', 68: '*'
 }
 qtd_caracteres = len(caracteres)
-tamanho = int(input("Digite o tamanho da senha: "))
+tamanho = forca_numero("Digite o tamanho da senha: ")
 senha = ""
 
 for i in range(tamanho):
@@ -53,7 +60,7 @@ print(f"O atleta deu {calcular_voltas_pista(r, d):.2f} voltas.")
 
 # Exercícios 4
 def calcular_delta(a, b, c):
-    return b * b - 4 * a * c
+    return b**2 - 4 * a * c
 
 def delta_positivo(delta):
     if delta >= 0:
@@ -74,9 +81,9 @@ def calcular_raizes(a = 0, b = 0, c = 0):
     return x1, x2
 
 print("Cálculo de raízes da equação do segundo grau (a(x^(2)) + bx + c = 0)")
-a = float(input("Digite o valor de a: "))
-b = float(input("Digite o valor de b: "))
-c = float(input("Digite o valor de c: "))
+a = forca_numero(("Digite o valor de a: "))
+b = forca_numero(("Digite o valor de b: "))
+c = forca_numero(("Digite o valor de c: "))
 
 x1, x2 = calcular_raizes(a, b, c)
 
