@@ -1,127 +1,256 @@
-import matplotlib.pyplot as plt
+# Desafio
+acougue = {
+    'Carne': ['Patinho', 'Coxão Mole', 'Fraldinha', 'Picanha', 'Maminha', 'LINGÜIÇA'],
+    'R$/kg': [35.90, 49.90, 39.90, 80.00, 45.90, 15],
+    'Estoque': [10, 50, 30, 15, 20, 100],
+    'Validade': ['4', '7', '5', '9', '20', '50']
+}
 
-# Tentativa 1
-def show_matriz(matriz):
-    for i in range(len(matriz)):
-        print(matriz[i])
+total = 0
+
+def show_menu(dic):
     print()
+    print("===== AÇOGUE =====")
+    for i in range(len(dic['Carne'])):
+        for key in dic.keys():
+            print(f"{key}: {dic[key][i]}")
+        print("==================")
+    print()
+    return dic
+
+def forca_opcao(msg, lista_opcoes):
+    msg += '\n' + '\n' + '\n'.join(lista_opcoes) + '\n' + '\n-> '
+    opcao = input(msg)
+    while opcao not in lista_opcoes:
+        print("Erro!")
+        opcao = input(msg)
+    return opcao
+
+def forca_numero(msg):
+    qtd = input(f"{msg}\n-> ")
+    while not qtd.isnumeric():
+        print("Caractere inválido!")
+        qtd = input(f"{msg}\n-> ")
+
+    qtd = int(qtd)
+    return qtd
+
+def acha_indice(lista, elem):
+    for i in range(len(lista)):
+        if lista[i] == elem:
+            return i
+
+def remove_estoque(qtd, escolha):
+    if qtd > acougue['Estoque'][escolha]:
+        print()
+        print("Pediu mais do que temos ou acabou!")
+        print()
+        return 0
+    else:
+        acougue['Estoque'][escolha] -= qtd
+        total = acougue['R$/kg'][escolha] * qtd
+        print()
+        show_menu(acougue)
+        return total
+
+def cadastrar(dic):
+    for key in dic.keys():
+        info = input(f"Diga o novo {key}: ")
+
+        if key == 'R$/kg':
+            info = float(info)
+        elif key in ['Estoque', 'Validade']:
+            info = int(info)
+
+        dic[key].append(info)
     return
 
-def plotar_matriz(matriz):
-    plt.imshow(matriz)
-    plt.colorbar()
-    plt.show()
-
-# Exercício 1 e 2
-def build_matriz(linhas, colunas):
-    matriz = []
-    for i in range(linhas):
-        linha = []
-        for j in range(colunas):
-            linha.append(0)
-        matriz.append(linha)
-    return matriz
-
-matriz_1 = build_matriz(10, 10)
-show_matriz(matriz_1)
-
-# Exercício 3
-def diagonal(matriz):
-    for i in range(len(matriz)):
-        matriz[i][i] = 1
+def remover(dic):
+    remover = forca_opcao("Qual carne você quer remover?", dic['Carne'])
+    indice_remover = acha_indice(dic['Carne'], remover)
+    for key in dic.keys():
+        dic[key].pop(indice_remover)
     return
 
-diagonal(matriz_1)
-show_matriz(matriz_1)
-plotar_matriz(matriz_1)
+while True:
+    show_menu(acougue)
 
-# Exercício 4
-def contra_diagonal(matriz):
-    for i in range(len(matriz)):
-        j = len(matriz) - i - 1
-        matriz[i][j] = 1
+    escolha = forca_opcao("Escolha qual carne você quer:", acougue['Carne'])
+    escolha = acha_indice(acougue['Carne'], escolha)
+
+    print()
+
+    qtd = forca_numero("Quantos kilos você vai querer?")
+    dindin = remove_estoque(qtd, escolha)
+    total += dindin
+
+    continuar = forca_opcao("Quer continuar comprando?", ['s', 'n'])
+
+    if continuar == 'n':
+        break
+
+print()
+
+print(f"O total ficou R$ {total:.2f}")
+
+print()
+
+admin = forca_opcao("Você é admin?", ['s', 'n'])
+if admin == 's':
+    while True:
+        adicionar = forca_opcao("Quer adicionar uma carne?", ['s', 'n'])
+
+        if adicionar == 's':
+            cadastrar(acougue)
+            show_menu(acougue)
+
+        print()
+
+        tirar = forca_opcao("Quer remover uma carne?", ['s', 'n'])
+
+        if tirar == 's':
+            remover(acougue)
+            show_menu(acougue)
+
+        continuar = forca_opcao("Quer continuar alterando?", ['s', 'n'])
+
+        if continuar == 'n':
+            break
+
+# Correção
+# import pandas as pd
+import requests
+
+acougue = {
+    'Carne': ['Patinho', 'Coxão Mole', 'Fraldinha', 'Picanha', 'Maminha', 'LINGÜIÇA'],
+    'Preço/kg': [35.90, 49.90, 39.90, 80.00, 45.90, 15],
+    'Estoque': [10, 50, 30, 15, 20, 100],
+    'Validade': ['4', '7', '5', '9', '20', '50']
+}
+
+# print(pd.DataFrame(acougue))
+
+def forca_numero(msg):
+    num = input(f"{msg}\n-> ")
+    while not num.isnumeric():
+        print("Caractere inválido!")
+        num = input(f"{msg}\n-> ")
+    return int(num)
+
+def forca_opcao(msg, lista):
+    opcoes = '\n'.join(lista)
+    opcao = input(f"{msg}\n{opcoes}\n-> ")
+    while not opcao in lista:
+        print("Inválido")
+        opcao = input(f"{msg}\n{opcoes}\n-> ")
+    return opcao
+
+def cria_indices():
+    indices = {acougue['Carne'][i]: i for i in range(len(acougue['Carne']))}
+    '''indices = {}
+    for i in range(len(acougue['Carne'])):
+        indices[acougue['Carne'][i]] = i'''
+    return indices
+
+def cadastrar():
+    global indices
+    for key in acougue.keys():
+        info = input(f"Diga o novo {key}:\n-> ")
+        acougue[key].append(info)
+    indices = cria_indices()
     return
 
-matriz_2 = build_matriz(10, 10)
-contra_diagonal(matriz_2)
-show_matriz(matriz_2)
-plotar_matriz(matriz_2)
-
-# Exercício 5
-def xadrez(matriz):
-    for i in range(len(matriz)):
-        for j in range(len(matriz[i])):
-            matriz[i][j] = 0
-            if i%2 == j%2:
-                matriz[i][j] = 1
+def remover():
+    global indices
+    item = forca_opcao("Qual item você quer remover?", acougue['Carne'])
+    indice_item = indices[item]
+    for key in acougue.keys():
+        acougue[key].pop(indice_item)
+    indices = cria_indices()
     return
 
-matriz_3 = build_matriz(8, 8)
+def atualizar():
+    item = forca_opcao("Qual item você deseja atualizar?", acougue['Carne'])
+    indice_item = indices[item]
+    keys = list(acougue.keys())
+    keys.pop(0)
+    for key in keys:
+        if forca_opcao(f"Vc quer atualizar {key} para {item}?", ['s', 'n']) == 's':
+            info = input(f"Diga o novo {key}: ")
+            acougue[key][indice_item] = info
 
-xadrez(matriz_3)
-show_matriz(matriz_3)
-plotar_matriz(matriz_3)
+    '''key = forca_opcao("Qual chave você quer atualizar?", acougue.keys())
+    item = forca_opcao("Qual item você quer atualizar?", acougue[key])
+    indice_item = indices[item]
 
-# Exercício 6
-def tranposta(matriz):
-    for i in range(len(matriz)):
-        for j in range(len(matriz[i])):
-            matriz[i][j] = i
-            if i > j:
-                aux = matriz[i][j]
-                matriz[i][j] = matriz[j][i]
-                matriz[j][i] = aux
+    acougue[key][indice_item] = input(f"Digite o novo valor do {acougue[key][indice_item]}:\n-> ")'''
+
     return
 
-matriz_4 = build_matriz(10, 10)
-tranposta(matriz_4)
-show_matriz(matriz_4)
-plotar_matriz(matriz_4)
-
-# Exercício 7
-def linha(matriz):
-    for i in range(len(matriz)):
-        for j in range(len(matriz[i])):
-            if i%2 != 0:
-                matriz[i][j] = 1
-    return
-
-matriz_5 = build_matriz(10, 10)
-linha(matriz_5)
-show_matriz(matriz_5)
-plotar_matriz(matriz_5)
-
-# Exercício 8
-matriz_6 = build_matriz(10, 10)
-
-raio = len(matriz_6)/2
-for i in range(len(matriz_6)):
-    for j in range(len(matriz_6[0])):
-        if (i-raio)**2 + (j-raio)**2 <= raio**2:
-            matriz_6[i][j] = 1
+def comprar():
+    item = forca_opcao("Qual item você quer comprar", acougue['Carne'])
+    indice_item = indices[item]
+    for key in acougue.keys():
+        print(f"{key}: {acougue[key][indice_item]}")
+    continuar = forca_opcao(f"Você quer levar {item}?", ['sim', 'não'])
+    if continuar == 'não':
+        return
+    qtd = forca_numero(f"Quantos kilos de {item}?")
+    carrinho['Valor Total'] += qtd*acougue['Preço/kg'][indice_item]
+    if acougue['Estoque'][indice_item] >= qtd:
+        acougue['Estoque'][indice_item] -= qtd
+        if not item in carrinho['Itens'].keys():
+            carrinho['Itens'][item] = qtd
         else:
-            matriz_6[i][j] = 0
+            carrinho['Itens'][item] += qtd
+    else:
+        print(f"Só há {acougue['Estoque'][indice_item]}")
+        comprar()
+    return
 
-show_matriz(matriz_6)
-plotar_matriz(matriz_6)
+def cadastro_cep():
+    cep = input("Diga seu cep:\n-> ")
+    endereco = requests.get(f"https://viacep.com.br/ws/{cep}/json/")
+    if endereco.status_code == 200:
+        carrinho['Endereço'] = endereco.json()
+        carrinho['Endereço']['N°'] = input("Número da residência:\n-> ")
+        carrinho['Endereço']['Complemento'] = input("Complemento:\n-> ")
+    else:
+        print("CEP inválido!")
+        cadastro_cep()
+    return
 
-# Exercício 9
-cinema = build_matriz(4, 4)
-show_matriz(cinema)
+indices = cria_indices()
 
-for i in range(len(cinema)):
-    for j in range(i, len(cinema[i])):
-        aux = cinema[j][i]
-        cinema[i][j] = aux
-        cinema[j][i] = i
+carrinho = {
+    'Endereço': {
+        "Rua": '',
+        "Bairro": '',
+        "N°": '',
+        "CEP": ''
+    },
+    'Itens': {},
+    'Valor Total': 0
+}
 
-show_matriz(cinema)
-
-for i in range(len(cinema)):
-    for j in range(len(cinema[i])):
-        if i%2 == j%2:
-            cinema[i][j] = "vaga"
+while True:
+    print("BEM-VINDO À AÇOGUERIA AGNELLO!!! 🍖🍖🍖")
+    usuario = forca_opcao("Você é:", ['cliente', 'funcionario'])
+    if usuario == "funcionario":
+        operacao = forca_opcao("Qual operação será realizada?", ["cadastrar", "remover", "atualizar"])
+        if operacao == "cadastrar":
+            cadastrar()
+        elif operacao == "remover":
+            remover()
         else:
-            cinema[i][j] = "ocupada"
+            atualizar()
 
-show_matriz(cinema)
+        continuar = forca_opcao("Você deseja realizar outra operação", ['sim', 'nao'])
+        if continuar == 'não':
+            break
+    else:
+        comprar()
+        encerrar = forca_opcao("Encerrar a compra ou ver mais itens?", ['encerrar', 'continuar'])
+        if encerrar == 'encerrar':
+            print(carrinho)
+            break
