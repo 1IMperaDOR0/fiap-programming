@@ -1,5 +1,3 @@
-// Comando para permitir caracteres em pt-br: java -Dfile.encoding=UTF-8 Variaveis
-
 public class Variaveis {
     public static void main(String[] args) {
         // Testando variáveis
