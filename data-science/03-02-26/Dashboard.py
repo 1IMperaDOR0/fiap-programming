@@ -1,133 +1,88 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-import os
 
-st.set_page_config(layout="wide")
+# Configuração da página
+st.set_page_config(page_title="Monitoramento de Manganês", layout="wide")
 
-st.title("📊 Dashboard de Qualidade da Água")
-st.markdown("Análise Antes vs Depois do Rompimento")
+# Função para carregar os dados
+@st.cache_data
+def load_data():
+    df = pd.read_csv('data/analitos_join.csv')
+    df['data'] = pd.to_datetime(df['data'])
+    # Removendo linhas com manganês nulo para as métricas e gráfico
+    return df
 
-# ----------------------------
-# Seleção automática de arquivo
-# ----------------------------
-pasta_dados = "datas"
+df = load_data()
 
-if not os.path.exists(pasta_dados):
-    st.error("A pasta 'datas' não foi encontrada.")
-    st.stop()
-
-arquivos = [f for f in os.listdir(pasta_dados) if f.endswith(".csv")]
-
-if not arquivos:
-    st.error("Nenhum arquivo CSV encontrado na pasta 'datas'.")
-    st.stop()
-
-arquivo_escolhido = st.selectbox("📂 Selecione o arquivo CSV", arquivos)
-
-caminho_arquivo = os.path.join(pasta_dados, arquivo_escolhido)
-
-df = pd.read_csv(caminho_arquivo)
-
-# ----------------------------
-# Verificando as colunas
-# ----------------------------
-st.write(df.columns)  # Verifica as colunas e mostra no Streamlit
-
-# Limpeza de espaços extras
-df.columns = df.columns.str.strip()  # Limpa espaços extras
-
-# Ajuste para o nome correto da coluna de data
-df["data"] = pd.to_datetime(df["data"])  # Ajuste para "data" (em minúsculas)
-
-# Ajuste a data do rompimento
-data_rompimento = pd.to_datetime("2015-12-05")
-df["Periodo_Evento"] = df["data"].apply(
-    lambda x: "Antes" if x < data_rompimento else "Depois"
-)
-
-# ----------------------------
-# Sidebar – Filtros
-# ----------------------------
+# --- SIDEBAR (FILTROS) ---
 st.sidebar.header("Filtros")
 
-pontos = st.sidebar.multiselect(
-    "Selecione o Ponto",
-    options=df["ponto"].unique(),
-    default=df["ponto"].unique()
-)
+# Filtro de Pontos
+pontos_disponiveis = sorted(df['ponto'].unique().tolist())
+pontos_selecionados = st.sidebar.multiselect("Selecione os Pontos", pontos_disponiveis, default=pontos_disponiveis)
 
-periodo_climatico = st.sidebar.multiselect(
-    "Selecione o Período Climático",
-    options=df["periodo"].unique(),
-    default=df["periodo"].unique()
-)
+# Filtro de Período Hidrológico
+periodos_disponiveis = sorted(df['periodo'].unique().tolist())
+periodo_selecionado = st.sidebar.multiselect("Selecione o Período Hidrológico", periodos_disponiveis, default=periodos_disponiveis)
 
-parametro = st.sidebar.selectbox(
-    "Selecione o Parâmetro",
-    ["turbidez", "manganes_total", "ferro_dissolvido"]
-)
+# Filtro de Rompimento
+rompimento_opcoes = sorted(df['rompimento'].unique().tolist())
+rompimento_selecionado = st.sidebar.multiselect("Rompimento (Antes/Depois)", rompimento_opcoes, default=rompimento_opcoes)
 
-df_filtrado = df[
-    (df["ponto"].isin(pontos)) &
-    (df["periodo"].isin(periodo_climatico))
+# Aplicando Filtros
+df_filtered = df[
+    (df['ponto'].isin(pontos_selecionados)) &
+    (df['periodo'].isin(periodo_selecionado)) &
+    (df['rompimento'].isin(rompimento_selecionado))
 ]
 
-# ----------------------------
-# Métricas
-# ----------------------------
-st.subheader("📌 Médias Antes vs Depois")
+# --- DASHBOARD PRINCIPAL ---
+st.title("Dashboard de Qualidade da Água: Manganês Total")
 
-col1, col2 = st.columns(2)
+if df_filtered.empty:
+    st.warning("Nenhum dado encontrado para os filtros selecionados.")
+else:
+    # --- MÉTRICAS (CARDS) ---
+    # Ignorando NaNs para cálculos
+    mn_values = df_filtered['manganes_total'].dropna()
+    
+    col1, col2, col3, col4 = st.columns(4)
+    
+    if not mn_values.empty:
+        media_mn = mn_values.mean()
+        max_mn = mn_values.max()
+        contagem = len(mn_values)
+        violações = (mn_values > 0.3).sum()
+        pct_violacao = (violações / contagem) * 100
+        
+        col1.metric("Média Mn Total", f"{media_mn:.3f} mg/L")
+        col2.metric("Valor Máximo", f"{max_mn:.3f} mg/L")
+        col3.metric("Contagem (n)", f"{contagem}")
+        col4.metric("% Violação (> 0.3)", f"{pct_violacao:.1f}%")
+    else:
+        st.info("Dados de Manganês insuficientes para métricas.")
 
-media_antes = df_filtrado[df_filtrado["Periodo_Evento"] == "Antes"][parametro].mean()
-media_depois = df_filtrado[df_filtrado["Periodo_Evento"] == "Depois"][parametro].mean()
+    # --- GRÁFICO TEMPORAL ---
+    st.subheader("Variação Temporal de Manganês Total")
+    
+    fig = px.line(
+        df_filtered.sort_values('data'), 
+        x='data', 
+        y='manganes_total', 
+        color='ponto',
+        markers=True,
+        labels={'data': 'Data', 'manganes_total': 'Mn Total (mg/L)', 'ponto': 'Ponto de Monitoramento'},
+        title="Concentração de Manganês ao Longo do Tempo"
+    )
+    
+    # Adicionando linha de referência da violação (0.3 mg/L)
+    fig.add_hline(y=0.3, line_dash="dash", line_color="red", annotation_text="Limite (0.3 mg/L)")
+    
+    st.plotly_chart(fig, use_container_width=True)
 
-col1.metric("Média Antes", f"{media_antes:.2f}")
-col2.metric(
-    "Média Depois",
-    f"{media_depois:.2f}",
-    delta=f"{media_depois - media_antes:.2f}"
-)
-
-# ----------------------------
-# Série Temporal
-# ----------------------------
-st.subheader("📈 Série Temporal")
-
-fig = px.line(
-    df_filtrado,
-    x="data",
-    y=parametro,
-    color="ponto",
-    markers=True
-)
-
-fig.add_vline(
-    x=data_rompimento,
-    line_dash="dash",
-    line_color="red",
-    annotation_text="Rompimento"
-)
-
-st.plotly_chart(fig, use_container_width=True)
-
-# ----------------------------
-# Boxplot
-# ----------------------------
-st.subheader("📦 Distribuição Antes vs Depois")
-
-fig_box = px.box(
-    df_filtrado,
-    x="Periodo_Evento",
-    y=parametro,
-    color="Periodo_Evento"
-)
-
-st.plotly_chart(fig_box, use_container_width=True)
-
-# ----------------------------
-# Tabela
-# ----------------------------
-st.subheader("📋 Dados Filtrados")
-st.dataframe(df_filtrado)
+    # --- TABELA DE DADOS ---
+    st.subheader("Dados Filtrados")
+    # Colunas solicitadas para visualização
+    cols_display = ['data', 'ponto', 'rompimento', 'periodo', 'manganes_total']
+    st.dataframe(df_filtered[cols_display], use_container_width=True)
