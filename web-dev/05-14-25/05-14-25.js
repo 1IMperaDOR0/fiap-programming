@@ -48,7 +48,7 @@ exibirCarrinho();
 function exibirCarrinho() {
     listaDeItens.innerHTML = '';
 
-    carrinho.array.forEach(item => {
+    carrinho.forEach(item => {
         const listaItem = document.createElement('li');
         listaItem.innerHTML = item;
         listaDeItens.appendChild(listaItem);
@@ -56,7 +56,7 @@ function exibirCarrinho() {
 }
 
 botaoAdicionar.addEventListener('click', () => {
-    const novoItem = inputNovoItem.ariaValueMax.trim()
+    const novoItem = inputNovoItem.value.trim()
 
     if (novoItem != '') {
         carrinho.push(novoItem);
