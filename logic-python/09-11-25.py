@@ -83,7 +83,8 @@
 #         contador[palavra] += 1
 # print(contador)
 
-# Exercício 1
+# EXERCÍCIO 1
+
 def forca_opcao(msg, opcoes):
     resposta = input(msg)
     while not resposta in opcoes:
@@ -103,7 +104,8 @@ print(saudacoes[resposta][0])
 
 print()
 
-# Exercício 2
+# EXERCÍCIO 2
+
 carros = {
     'nome': ['polinho turbão manual', 'up', 'kombi', 'uno'],
     'portas': [4, 2, 6, 2],
@@ -132,7 +134,8 @@ for i in range(len(carros['nome'])):
 
 print()
 
-# Exercício 3
+# EXERCÍCIO 3
+
 index = 0
 carro_mais_caro = carros['preco'][0]
 
@@ -144,7 +147,8 @@ print(f"O carro mais caro é a opção:\n{index+1}. {carros['nome'][index]} ({ca
 
 print()
 
-# Exercício 4
+# EXERCÍCIO 4
+
 index = 0
 carro_mais_barato = carros['preco'][0]
 
@@ -156,7 +160,8 @@ print(f"O carro mais barato é a opção:\n{index+1}. {carros['nome'][index]} ({
 
 print()
 
-# Exercício 5
+# EXERCÍCIO 5
+
 def forca_numero(msg):
     resposta = input(msg)
     while not resposta.isnumeric():
@@ -186,7 +191,8 @@ if resposta == 's':
 
     build_table(carros, "CARROS", 'nome', 'ano', 'preco', 'portas')
 
-# Exercício 6
+# EXERCÍCIO 6
+
 resposta = forca_opcao("Você gostaria de remover um carro da lista? (s/n)\n-> ", opcoes)
 
 if resposta == 's':
@@ -204,7 +210,8 @@ if resposta == 's':
 
     build_table(carros, "CARROS", 'nome', 'ano', 'preco', 'portas')
 
-# Exercício 7
+# EXERCÍCIO 7
+
 frase = "O bispo de Constantinopla é um bom desconstantinopolitanizador. Quem o desconstantinopolitanizar, um bom desconstantinopolitanizador será."
 frase = frase.lower()
 frase = frase.replace('.', '')
@@ -222,7 +229,8 @@ print(contador)
 
 print()
 
-# Exercício 8
+# EXERCÍCIO 8
+
 numeros = {
     'zero': '0',
     'um': '1',
@@ -242,7 +250,8 @@ for key in numeros:
 numero = numero.replace(' ', '')
 print(numero)
 
-# Exercício 9 e 10
+# EXERCÍCIO 9 e 10
+
 dic_1 = {
     "a": 1, 
     "b": 2, 

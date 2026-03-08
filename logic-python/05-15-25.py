@@ -77,9 +77,10 @@ for i in range(len(alunos)):
     else:
         print(f"{alunos[i]} foi reprovado/a")
 
-#Exercício 1 - contar a quantidade de numeros pares na lista
-#Exercício 2 - Calcular a soma dos elementos da lista
-#Exercício 3 - calcular a media dos elementos da lista
+# Exercício 1 - contar a quantidade de numeros pares na lista
+# Exercício 2 - Calcular a soma dos elementos da lista
+# Exercício 3 - calcular a media dos elementos da lista
+
 numeros = [90,7,3,5,2,1,8,6,0,4]
 pares = 0
 for num in numeros:
@@ -90,7 +91,7 @@ for i in range(len(numeros)):
     if numeros[i] % 2 == 0:
         pares += 1
 
-#ERRADO
+# ERRADO
 # pares = 0
 # for i in numeros:
 #     if numeros[i]%2 == 0:
@@ -113,7 +114,7 @@ for i in range(len(numeros)):
 print(soma)
 media = soma/len(numeros)
 
-#Errado!
+# ERRADO
 # soma = 0
 # for i in range(numeros):
 #     soma += numeros[i]

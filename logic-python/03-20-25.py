@@ -1,4 +1,4 @@
-# """EXERCÍCO 1"""
+'''EXERCÍCO 1'''
 # x = int(input("Digite o valor 1: "))
 # y = int(input("Digite o valor 2: "))
 
@@ -16,7 +16,7 @@
 # print("---------------------------------------------------------")
 # print(" ")
 
-# """EXERCÍCO 2"""
+'''EXERCÍCO 2'''
 
 # ano = int(input("Considerando o ano de 2025. Digite o ano que você nasceu\n: "))
 # idade = 2025 - ano
@@ -34,7 +34,7 @@
 # print("---------------------------------------------------------")
 # print(" ")
 
-# """EXERCÍCO 3"""
+'''EXERCÍCO 3'''
 
 # senha = "1234"
 # login = input("Digite sua senha\n: ")
@@ -48,7 +48,7 @@
 # print("---------------------------------------------------------")
 # print(" ")
 
-# """EXERCÍCO 4"""
+'''EXERCÍCO 4'''
 
 # apple = int(input("Digite a quantidade de maças que você pegou\n: "))
 
@@ -65,7 +65,7 @@
 # print("---------------------------------------------------------")
 # print(" ")
 
-# """EXERCÍCO 5"""
+'''EXERCÍCO 5'''
 
 # a = int(input("Diga o primeiro numero: "))
 # b = int(input("Diga o segundo numero: "))
@@ -95,7 +95,7 @@
 # print("---------------------------------------------------------")
 # print(" ")
 
-# """EXERCÍCO 6"""
+'''EXERCÍCO 6'''
 
 # altura = float(input("Digite sua altura\n: "))
 # sexo = int(input("Digite 1 para feminino ou 2 para masculino\n: "))
@@ -109,7 +109,7 @@
 # print("---------------------------------------------------------")
 # print(" ")
 
-# """EXERCÍCO 7 E 8"""
+'''EXERCÍCO 7 E 8'''
 
 # lados = int(input("Digite a quantidade de lados do polígono\n: "))
 
@@ -140,7 +140,7 @@
 # print("---------------------------------------------------------")
 # print(" ")
 
-# """EXERCÍCO 9"""
+'''EXERCÍCO 9'''
 
 # a = int(input("Digite o valor a\n: "))
 # b = int(input("Digite o valor b\n: "))
@@ -160,7 +160,7 @@
 # print("---------------------------------------------------------")
 # print(" ")
 
-# """EXERCÍCO 10"""
+# '''EXERCÍCO 10'''
 
 # lado1 = int(input("Digite o valor do lado 1\n: "))
 # lado2 = int(input("Digite o valor do lado 2\n: "))
@@ -177,7 +177,7 @@
 # print("---------------------------------------------------------")
 # print(" ")
 
-"""EXERCÍCO 11"""
+'''EXERCÍCO 11'''
 
 angulo1 = int(input("Digite o valor do ângulo 1\n: "))
 angulo2 = int(input("Digite o valor do ângulo 2\n: "))

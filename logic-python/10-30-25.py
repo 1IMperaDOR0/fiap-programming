@@ -7,7 +7,8 @@ def forca_numero(msg):
         n = forca_numero(msg)
     return int(n)
 
-# Exercício 1
+# EXERCÍCIO 1
+
 for i in range(10, 0, -1):
     print(i)
     time.sleep(1)
@@ -21,7 +22,8 @@ for i in range(0, 101, 10):
     time.sleep(0.5)
 print("Download concluído!")
 
-# Exercício 2
+# EXERCÍCIO 2
+
 caracteres = {
     0: 'a', 1: 'b', 2: 'c', 3: 'd', 4: 'e', 5: 'f', 6: 'g', 7: 'h', 8: 'i', 9: 'j', 10: 'k', 
     11: 'l', 12: 'm', 13: 'n', 14: 'o', 15: 'p', 16: 'q', 17: 'r', 18: 's', 19: 't', 20: 'u', 
@@ -43,7 +45,8 @@ for i in range(tamanho):
 
 print("Senha gerada:", senha)
 
-# Exercício 3
+# EXERCÍCIO 3
+
 def calcular_comprimento_circulo(raio):
     pi = 3.1415926
     calculo_circulo = 2 * pi * raio
@@ -58,7 +61,8 @@ r = float(input("Digite o raio da pista: "))
 d = float(input("Digite a distância percorrida: "))
 print(f"O atleta deu {calcular_voltas_pista(r, d):.2f} voltas.")
 
-# Exercícios 4
+# EXERCÍCIO 4
+
 def calcular_delta(a, b, c):
     return b**2 - 4 * a * c
 

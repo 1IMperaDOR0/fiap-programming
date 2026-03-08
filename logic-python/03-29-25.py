@@ -1,4 +1,5 @@
 '''Exercício 1'''
+
 # while True:
 #   nota = input('Digite uma nota de 0 à 10\n: ')
 #   if nota.isnumeric():
@@ -16,6 +17,7 @@
 #   print(" ")
 
 '''Exercício 2'''
+
 # nome = input('Digite seu nome\n: ')
 # while not(nome.isalpha() and len(nome) >= 3):
 #   nome = input('Nome inválido! Digite seu nome\n: ')
@@ -57,6 +59,7 @@
 #   print(" ")
 
 '''Exercício 8'''
+
 a = 0
 b = 1
 
@@ -87,6 +90,7 @@ while i < n:
 #   print(" ")
 
 '''Exercício 9'''
+
 # i = 0
 
 # pares = 0
@@ -119,6 +123,7 @@ while i < n:
 #   print(" ")
 
 '''Exercício 12'''
+
 # while True:
 #   nota = input('Digite a quantidade de notas que você quer digitar\n: ')
 #   if nota.isnumeric():
@@ -152,6 +157,7 @@ while i < n:
 #   print(" ")
 
 '''Exercício 13'''
+
 # ano = 1995
 
 # salarioInicial = input('Digite o salário\n: ')
@@ -181,6 +187,7 @@ while i < n:
 #   print(" ")
 
 '''Exercício 14'''
+
 # intervalo_1 = 0
 # intervalo_2 = 0
 # intervalo_3 = 0
@@ -217,6 +224,7 @@ while i < n:
 #   print(" ")
 
 '''Exercício 15'''
+
 # candidato1 = 'José'
 # candidato2 = 'João'
 # candidato3 = 'Maria'

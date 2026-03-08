@@ -16,7 +16,7 @@ def mostra_matriz(matriz):
         print(linha)
     return
 
-#===========Mostrar a matriz==========#
+# Mostrar a matriz
 
 '''imagem = cria_matriz(10, 10)'''
 '''print(mostra_matriz(imagem))'''
