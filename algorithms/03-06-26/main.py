@@ -41,6 +41,3 @@ print(decrescente)
 lista = [1,2,3,4,5,6,7,8,9,10]
 extra =  list(map(lambda x:x*2, filter(lambda x:x%2==0, lista)))
 print(extra)
-
-opa = map(+1, 2)
-print(opa)
