@@ -29,6 +29,7 @@ public class Televisor {
             if(canal == 2 || canal == 4 || canal == 5 || canal == 7 || canal == 13) {
                 this.canal = canal;
             } else {
+                this.canal = 2;
                 throw new Exception("Canal inexistente!");
             }
         } catch(Exception e) {
@@ -37,10 +38,26 @@ public class Televisor {
     }
 
     public void aumentarVolume() {
-        volume++;
+        try {
+            if (volume >= 0 && volume < 20) {
+                volume++;
+            } else {
+                throw new Exception("Volume fora do range! (min = 0 e max = 20)");
+            }
+        } catch(Exception e) {
+            System.out.println(e.getMessage());
+        }
     }
 
     public void diminuirVolume() {
-        volume--;
+        try {
+            if (volume > 0 && volume <= 20) {
+                volume--;
+            } else {
+                throw new Exception("Volume fora do range! (min = 0 e max = 20)");
+            }
+        } catch(Exception e) {
+            System.out.println(e.getMessage());
+        }
     }
 }
