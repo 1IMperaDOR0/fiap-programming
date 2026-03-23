@@ -31,7 +31,7 @@ public class Main {
 
             // Exibindo as informações
             System.out.printf("Volume: %d\nEstação: %.1f", radio.getVolume(), radio.getEstacao());
-        } catch (Exception e) {
+        } catch(Exception e) {
             System.out.println("Formato incorreto!");
         }
     }
