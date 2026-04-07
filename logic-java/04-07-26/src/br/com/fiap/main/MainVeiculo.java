@@ -13,7 +13,7 @@ public class MainVeiculo {
 
         try {
             String modelo = JOptionPane.showInputDialog("Digite o modelo do veículo:");
-            LocalDate dataCompra = LocalDate.parse(JOptionPane.showInputDialog("Digite a data de compra do veículo (ex.: dd-mm-aaaa):"), dtf);
+            LocalDate dataCompra = LocalDate.parse(JOptionPane.showInputDialog("Digite a data de compra do veículo (ex.: dd-MM-aaaa):"), dtf);
             double valorCompra = Double.parseDouble(JOptionPane.showInputDialog("Digite o valor que você comprou o veículo:"));
 
             veiculo.setModelo(modelo);
