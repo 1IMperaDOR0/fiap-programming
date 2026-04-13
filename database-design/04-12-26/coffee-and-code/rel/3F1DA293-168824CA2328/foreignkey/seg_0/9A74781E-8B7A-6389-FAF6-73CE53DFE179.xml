@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="9A74781E-8B7A-6389-FAF6-73CE53DFE179" containerWithKeyObject="DBC94B32-FEA7-05DE-B9B0-BBE966591E1D" localFKIndex="6488B9F9-45B8-9C3C-4054-32F3F9B39516" name="possui_pedido_bar_FK">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:17:37 UTC</createdTime>
+<generatorID>5B892ED5-C5E0-41AF-0B05-02BE0D5A26EF</generatorID>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<referredTableLongName>pedido_bar</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>89390772-65FC-A0C7-C307-785DB7E106EE</referredTableID>
+<keyObject>FE492F0D-25FC-0918-21BC-DF1B547E4664</keyObject>
+<referredKeyID>FE492F0D-25FC-0918-21BC-DF1B547E4664</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_pedido,id_cliente</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

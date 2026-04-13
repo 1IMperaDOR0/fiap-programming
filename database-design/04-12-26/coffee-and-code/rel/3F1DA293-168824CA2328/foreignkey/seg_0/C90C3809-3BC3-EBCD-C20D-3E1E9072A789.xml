@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C90C3809-3BC3-EBCD-C20D-3E1E9072A789" containerWithKeyObject="6E7F718D-C56C-D10A-F359-B8713AD1F3F5" localFKIndex="76A516EE-709C-CE87-4247-083A9855F41B" name="utiliza_estoque_cozinha_FK">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:17:37 UTC</createdTime>
+<generatorID>D6851C91-36C4-FF76-D4FB-7A3BAD454FAA</generatorID>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<referredTableLongName>estoque_cozinha</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C8FC86A6-B5C5-4334-67CA-B49D99714091</referredTableID>
+<keyObject>366A396E-807A-4D9C-B87A-0AC1EBCF73B3</keyObject>
+<referredKeyID>366A396E-807A-4D9C-B87A-0AC1EBCF73B3</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_item_estoque</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

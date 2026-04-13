@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C6084E01-3A4A-BF27-7260-02F21806697A" name="obedece">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:17:37 UTC</createdTime>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="camera_seguranca_id_camera" id="17523FC1-B11F-52E7-EB18-5DAB3936AE97">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:17:37 UTC</createdTime>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BAF347B1-CA7E-4DCF-7D86-37DD15CDA9BC" referredColumn="849C0F13-59B4-5B39-80D2-5905DD076367"/>
+</associations>
+</Column>
+<Column name="seguranca_regra_firewall_id_regra" id="5BEAF897-C4E1-0133-BACE-F8F728CAF3AC">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:17:37 UTC</createdTime>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A41BF0DA-3DF2-855E-3E86-4E4239EF49D1" referredColumn="982B33AE-47CB-BC8F-7401-B74CFB5FCBC2"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7004B5FD-3B94-04BE-B8C8-84B5D8E82629" name="obedece_PK">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:17:37 UTC</createdTime>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="17523FC1-B11F-52E7-EB18-5DAB3936AE97"/>
+<colUsage columnID="5BEAF897-C4E1-0133-BACE-F8F728CAF3AC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0DB1D21E-BB1F-5427-A2CA-DE8574B0C334" name="obedece_camera_seguranca_FK">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:17:37 UTC</createdTime>
+<generatorID>972C75F9-A0C6-C21C-54EC-4CE66473849B</generatorID>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="17523FC1-B11F-52E7-EB18-5DAB3936AE97"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E895D220-85DD-DA17-BE93-3CDCE280C8B3" name="obedece_seguranca_regra_firewall_FK">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:17:37 UTC</createdTime>
+<generatorID>972C75F9-A0C6-C21C-54EC-4CE66473849B</generatorID>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5BEAF897-C4E1-0133-BACE-F8F728CAF3AC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

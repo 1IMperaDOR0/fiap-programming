@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="34FFB108-50F5-78BC-590F-D2F33E650E4E" containerWithKeyObject="F47D7B25-0EBC-4138-3AC4-62A9A9136BF9" localFKIndex="95D92FBE-B475-7332-F437-6FC8BDF268F0" name="aluga_livro_FK">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:17:37 UTC</createdTime>
+<generatorID>7D96B868-EC50-EAB7-BF74-3A2702EB75A3</generatorID>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<referredTableLongName>livro</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E3BBB909-84C6-CBAD-D9AB-93B0E9C181D2</referredTableID>
+<keyObject>3FFEA3D2-9F98-CDA1-B5C2-2C862E361A86</keyObject>
+<referredKeyID>3FFEA3D2-9F98-CDA1-B5C2-2C862E361A86</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_livro</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

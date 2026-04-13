@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="BAF347B1-CA7E-4DCF-7D86-37DD15CDA9BC" containerWithKeyObject="C6084E01-3A4A-BF27-7260-02F21806697A" localFKIndex="0DB1D21E-BB1F-5427-A2CA-DE8574B0C334" name="obedece_camera_seguranca_FK">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:17:37 UTC</createdTime>
+<generatorID>972C75F9-A0C6-C21C-54EC-4CE66473849B</generatorID>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<referredTableLongName>camera_seguranca</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>FDAC1159-7F1E-F9FB-8F9A-CA6B8080AF40</referredTableID>
+<keyObject>82498268-E57B-DAA0-71CE-11BB7261B22D</keyObject>
+<referredKeyID>82498268-E57B-DAA0-71CE-11BB7261B22D</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_camera</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
