@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="34DDD3BB-84B8-9AE8-DA7E-5CC1481655EA" name="equipamento">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:17:37 UTC</createdTime>
+<generatorID>1F241868-5D3E-7372-CF6D-6DC2108D6EB8</generatorID>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_equipamento" id="68FFFA7C-A63F-D5E7-1B8B-30A7E1F009FA">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:17:37 UTC</createdTime>
+<generatorID>6376B507-E2F5-480D-2443-52AD4832D991</generatorID>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo_equipamento" id="CC2D8152-EC46-2428-010D-3B490AE817DB">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:17:37 UTC</createdTime>
+<generatorID>6BEDE698-BFC5-32FE-0241-BBE56322AD81</generatorID>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="marca_equipamento" id="082E11F9-7581-1271-7268-B9A2A2BD7402">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:17:37 UTC</createdTime>
+<generatorID>6E2F1AC7-BF22-EEA9-2071-9EBAD54A9B00</generatorID>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="modelo_equipamento" id="8E7014D8-06AA-7685-6A39-93BF61CA05A1">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:17:37 UTC</createdTime>
+<generatorID>3F1ED964-A4DC-04F9-D1E3-52AA1DACC66A</generatorID>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status_funcionamento" id="66B4B516-EA69-5142-E97E-65400AEEE7C1">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:17:37 UTC</createdTime>
+<generatorID>D2C52F38-4CB6-00FB-BB83-0F1BB97AF537</generatorID>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_ultima_manutencao" id="D286DC5A-CE9D-69DA-0289-E93C8D2ADFE8">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:17:37 UTC</createdTime>
+<generatorID>AB3D2CDF-56F2-52CF-173F-98DC22DDDF8D</generatorID>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1BD8B486-0701-4CFB-E9DD-037F7C4A0851" name="equipamento_PK">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:17:37 UTC</createdTime>
+<generatorID>EBF25012-96D9-0183-8BC8-403C261B1868</generatorID>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="68FFFA7C-A63F-D5E7-1B8B-30A7E1F009FA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

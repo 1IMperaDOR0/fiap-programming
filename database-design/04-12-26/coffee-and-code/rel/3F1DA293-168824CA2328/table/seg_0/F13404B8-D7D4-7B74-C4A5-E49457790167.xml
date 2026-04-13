@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F13404B8-D7D4-7B74-C4A5-E49457790167" name="receita_comida">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:17:37 UTC</createdTime>
+<generatorID>B093AC6C-36CE-C263-9DFC-02F5EC8BCD2E</generatorID>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_receita" id="3A07B787-E9FA-6900-28B9-D65B607A958B">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:17:37 UTC</createdTime>
+<generatorID>4F46A575-B99F-1BF0-FF5E-AE027638FBBF</generatorID>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nome_receita" id="687DF6A8-F983-3777-FAE5-54948879F470">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:17:37 UTC</createdTime>
+<generatorID>28BFFD08-EA21-DCEA-511F-5260A0D90B50</generatorID>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descricao_receita" id="1D986E6D-A44D-85BF-D21D-0D2A962DEDD3">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:17:37 UTC</createdTime>
+<generatorID>B0F7B65A-F009-C59C-67B2-5477A16A542A</generatorID>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tempo_preparo_min" id="A3135E0D-9642-F37E-82B5-0A896DDDF80D">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:17:37 UTC</createdTime>
+<generatorID>F125F659-A712-6F9C-4CAF-00F7EA926918</generatorID>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="custo_estimado_receita" id="8AE63DFE-6F4C-0D72-0C82-1AF00E123679">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:17:37 UTC</createdTime>
+<generatorID>829BC85C-AD2D-10CE-6CB2-25614EBC23BE</generatorID>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vegano_receita" id="1078EEEE-EFCB-AA1E-0EAA-0D0E9BE194A4">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:17:37 UTC</createdTime>
+<generatorID>5D9DB3C1-B0F9-2FD3-1F7F-2F3303DA48B5</generatorID>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7E11A9F1-EF3E-038C-89FA-B01768238986" name="receita_comida_PK">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:17:37 UTC</createdTime>
+<generatorID>848F208B-7EC0-1461-E455-9EB5410E40C9</generatorID>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3A07B787-E9FA-6900-28B9-D65B607A958B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

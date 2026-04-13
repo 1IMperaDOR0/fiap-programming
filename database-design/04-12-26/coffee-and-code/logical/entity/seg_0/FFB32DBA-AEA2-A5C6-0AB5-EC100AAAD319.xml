@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FFB32DBA-AEA2-A5C6-0AB5-EC100AAAD319" name="receita_bebida">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 03:25:21 UTC</createdTime>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<engineerTo>
+<item key="3F1DA293-2A1D-A4B6-2B63-168824CA2328" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_bebida" id="C366147E-A935-5767-8C39-DDC1B6C4C6CD">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 03:25:39 UTC</createdTime>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<engineerTo>
+<item key="3F1DA293-2A1D-A4B6-2B63-168824CA2328" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nome_bebida" id="09B95C5C-F2C7-DFCD-67AB-1DC779F7F846">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 03:25:54 UTC</createdTime>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<engineerTo>
+<item key="3F1DA293-2A1D-A4B6-2B63-168824CA2328" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descricao_bebida" id="02F2C733-8494-A119-F34B-243E92A4A0F3">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 03:26:14 UTC</createdTime>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<engineerTo>
+<item key="3F1DA293-2A1D-A4B6-2B63-168824CA2328" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="preco_venda_bebida" id="2781C02A-00D4-31F6-3262-E0D43EBAADAD">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 03:26:32 UTC</createdTime>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<engineerTo>
+<item key="3F1DA293-2A1D-A4B6-2B63-168824CA2328" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tipo_bebida" id="F268FAFD-102A-33F3-8A91-3AC2DE53C8A5">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 03:27:31 UTC</createdTime>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<engineerTo>
+<item key="3F1DA293-2A1D-A4B6-2B63-168824CA2328" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_criacao_bebida" id="07F410DE-293E-F1AF-DB5C-2E932927433E">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 03:27:55 UTC</createdTime>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<engineerTo>
+<item key="3F1DA293-2A1D-A4B6-2B63-168824CA2328" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E012397D-7C82-C567-135C-EA0397A45569" name="bar PK">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 03:25:53 UTC</createdTime>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<engineerTo>
+<item key="3F1DA293-2A1D-A4B6-2B63-168824CA2328" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C366147E-A935-5767-8C39-DDC1B6C4C6CD</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

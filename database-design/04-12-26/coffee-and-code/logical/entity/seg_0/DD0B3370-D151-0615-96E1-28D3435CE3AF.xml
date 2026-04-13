@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DD0B3370-D151-0615-96E1-28D3435CE3AF" name="livro">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:12:27 UTC</createdTime>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<engineerTo>
+<item key="3F1DA293-2A1D-A4B6-2B63-168824CA2328" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_livro" id="323D724D-B436-AB45-2909-DED85C0A58B6">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:12:33 UTC</createdTime>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<engineerTo>
+<item key="3F1DA293-2A1D-A4B6-2B63-168824CA2328" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="titulo_livro" id="6087AD38-CF5D-73FF-E2DF-94F01B5DA68F">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:12:45 UTC</createdTime>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<engineerTo>
+<item key="3F1DA293-2A1D-A4B6-2B63-168824CA2328" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150 CHAR</dataTypeSize>
+<ownDataTypeParameters>150 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="autor_livro" id="267AA088-65AE-6D00-74C2-EB2F414840B0">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:13:08 UTC</createdTime>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<engineerTo>
+<item key="3F1DA293-2A1D-A4B6-2B63-168824CA2328" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="genero_livro" id="194CEA78-D376-C181-CAEF-E2866C921DCD">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:13:47 UTC</createdTime>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<engineerTo>
+<item key="3F1DA293-2A1D-A4B6-2B63-168824CA2328" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="quantidade_livro" id="3B24E10C-A1EC-3EA3-DF2C-BF0C6C23CFFF">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:14:18 UTC</createdTime>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<engineerTo>
+<item key="3F1DA293-2A1D-A4B6-2B63-168824CA2328" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_aquisicao_livro" id="AADF4353-AF50-A3FD-4235-C6313EDDD2C5">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:14:33 UTC</createdTime>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<engineerTo>
+<item key="3F1DA293-2A1D-A4B6-2B63-168824CA2328" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E86F542E-F755-FD80-830D-C641E5CAF5A2" name="livro PK">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:12:44 UTC</createdTime>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<engineerTo>
+<item key="3F1DA293-2A1D-A4B6-2B63-168824CA2328" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>323D724D-B436-AB45-2909-DED85C0A58B6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

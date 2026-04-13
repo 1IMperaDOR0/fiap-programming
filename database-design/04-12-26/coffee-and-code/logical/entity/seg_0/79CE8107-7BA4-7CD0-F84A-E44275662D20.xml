@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="79CE8107-7BA4-7CD0-F84A-E44275662D20" name="jogo_instalado">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:02:11 UTC</createdTime>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<engineerTo>
+<item key="3F1DA293-2A1D-A4B6-2B63-168824CA2328" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_jogo" id="6D65ACF4-D7D4-9EB1-F1EF-37479BBD4EF7">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:02:26 UTC</createdTime>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<engineerTo>
+<item key="3F1DA293-2A1D-A4B6-2B63-168824CA2328" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nome_jogo" id="F48A68D9-53DB-BE22-9CDA-D66F4DE71615">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:02:50 UTC</createdTime>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<engineerTo>
+<item key="3F1DA293-2A1D-A4B6-2B63-168824CA2328" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="genero_jogo" id="B8B34495-0EA7-3D4D-E43D-4C5EE13B075E">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:03:11 UTC</createdTime>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<engineerTo>
+<item key="3F1DA293-2A1D-A4B6-2B63-168824CA2328" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tamanho_jogo" id="6CD171AE-29BF-FB4C-B423-68BCBFBF5D22">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:03:39 UTC</createdTime>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<engineerTo>
+<item key="3F1DA293-2A1D-A4B6-2B63-168824CA2328" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_instalacao_jogo" id="275FBB70-3600-7B35-0A96-E789F19FFEE8">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:04:14 UTC</createdTime>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<engineerTo>
+<item key="3F1DA293-2A1D-A4B6-2B63-168824CA2328" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="DF782BEE-100C-E383-13DA-1022CF8EE584" name="jogo_instalado PK">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:02:48 UTC</createdTime>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<engineerTo>
+<item key="3F1DA293-2A1D-A4B6-2B63-168824CA2328" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6D65ACF4-D7D4-9EB1-F1EF-37479BBD4EF7</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

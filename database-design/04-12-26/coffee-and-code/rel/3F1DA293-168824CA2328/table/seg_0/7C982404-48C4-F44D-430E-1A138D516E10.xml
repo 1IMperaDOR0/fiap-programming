@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7C982404-48C4-F44D-430E-1A138D516E10" name="jogo_instalado">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:17:37 UTC</createdTime>
+<generatorID>79CE8107-7BA4-7CD0-F84A-E44275662D20</generatorID>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_jogo" id="2F6CA732-05C4-5CB9-388E-EB1007E4BE43">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:17:37 UTC</createdTime>
+<generatorID>6D65ACF4-D7D4-9EB1-F1EF-37479BBD4EF7</generatorID>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nome_jogo" id="810F8573-58C7-7150-55BA-B9C23F7FF474">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:17:37 UTC</createdTime>
+<generatorID>F48A68D9-53DB-BE22-9CDA-D66F4DE71615</generatorID>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="genero_jogo" id="88260C5A-93E8-3905-3F24-8D6C4E88C3B5">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:17:37 UTC</createdTime>
+<generatorID>B8B34495-0EA7-3D4D-E43D-4C5EE13B075E</generatorID>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tamanho_jogo" id="D8B7934D-B589-9D06-B46C-2B81B4EFCFD9">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:17:37 UTC</createdTime>
+<generatorID>6CD171AE-29BF-FB4C-B423-68BCBFBF5D22</generatorID>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_instalacao_jogo" id="1D70F437-142D-3433-E3B7-EA09619BEAE8">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:17:37 UTC</createdTime>
+<generatorID>275FBB70-3600-7B35-0A96-E789F19FFEE8</generatorID>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="92B88DE8-5721-E0D4-7A2F-E0261B50127C" name="jogo_instalado_PK">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:17:37 UTC</createdTime>
+<generatorID>DF782BEE-100C-E383-13DA-1022CF8EE584</generatorID>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2F6CA732-05C4-5CB9-388E-EB1007E4BE43"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

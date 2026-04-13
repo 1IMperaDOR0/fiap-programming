@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DBC94B32-FEA7-05DE-B9B0-BBE966591E1D" name="possui">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:17:37 UTC</createdTime>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="receita_bebida_id_bebida" id="0B362EE6-50D3-44F6-7185-72AA648632F5">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:17:37 UTC</createdTime>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BC68B861-EB9F-BE1E-DD64-AD51CE5406F7" referredColumn="E388EAB1-A9ED-BB2F-9489-AFFD50C4F27D"/>
+</associations>
+</Column>
+<Column name="pedido_bar_id_pedido" id="650DC53C-0C1B-745F-8D95-797FA7D3B50D">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:17:37 UTC</createdTime>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9A74781E-8B7A-6389-FAF6-73CE53DFE179" referredColumn="3F948FA7-C46E-4ECF-E991-394EE7E75448"/>
+</associations>
+</Column>
+<Column name="pedido_bar_id_cliente" id="1CE4F9BF-B698-AD53-8F49-8054F8C52693">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:17:37 UTC</createdTime>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9A74781E-8B7A-6389-FAF6-73CE53DFE179" referredColumn="E7953699-8828-100C-A8B9-EF9A679D3C02"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FE3BBA16-B1E6-6C2F-DA5B-241797B74391" name="possui_PK">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:17:37 UTC</createdTime>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0B362EE6-50D3-44F6-7185-72AA648632F5"/>
+<colUsage columnID="650DC53C-0C1B-745F-8D95-797FA7D3B50D"/>
+<colUsage columnID="1CE4F9BF-B698-AD53-8F49-8054F8C52693"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D13AE440-72C2-D2F2-AFD9-DE4AFA640111" name="possui_receita_bebida_FK">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:17:37 UTC</createdTime>
+<generatorID>5B892ED5-C5E0-41AF-0B05-02BE0D5A26EF</generatorID>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0B362EE6-50D3-44F6-7185-72AA648632F5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6488B9F9-45B8-9C3C-4054-32F3F9B39516" name="possui_pedido_bar_FK">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:17:37 UTC</createdTime>
+<generatorID>5B892ED5-C5E0-41AF-0B05-02BE0D5A26EF</generatorID>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="650DC53C-0C1B-745F-8D95-797FA7D3B50D"/>
+<colUsage columnID="1CE4F9BF-B698-AD53-8F49-8054F8C52693"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

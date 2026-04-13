@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6E7F718D-C56C-D10A-F359-B8713AD1F3F5" name="utiliza">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:17:37 UTC</createdTime>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="receita_comida_id_receita" id="D379F697-8889-72DF-265A-E92B64BF7D38">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:17:37 UTC</createdTime>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D6735B2E-5B59-029C-17EF-D80CEF3D76C4" referredColumn="3A07B787-E9FA-6900-28B9-D65B607A958B"/>
+</associations>
+</Column>
+<Column name="estoque_cozinha_id_item_estoque" id="04E4108B-1D42-08AF-600F-7AE361D9414D">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:17:37 UTC</createdTime>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C90C3809-3BC3-EBCD-C20D-3E1E9072A789" referredColumn="F4D21EE4-F6B8-2A65-A8C1-60172321EEC2"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9592F599-A3BF-DC7D-5FD2-5836DD5C6F52" name="utiliza_PK">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:17:37 UTC</createdTime>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D379F697-8889-72DF-265A-E92B64BF7D38"/>
+<colUsage columnID="04E4108B-1D42-08AF-600F-7AE361D9414D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="060C3A38-5125-54A3-A82F-219D738455BE" name="utiliza_receita_comida_FK">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:17:37 UTC</createdTime>
+<generatorID>D6851C91-36C4-FF76-D4FB-7A3BAD454FAA</generatorID>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D379F697-8889-72DF-265A-E92B64BF7D38"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="76A516EE-709C-CE87-4247-083A9855F41B" name="utiliza_estoque_cozinha_FK">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:17:37 UTC</createdTime>
+<generatorID>D6851C91-36C4-FF76-D4FB-7A3BAD454FAA</generatorID>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="04E4108B-1D42-08AF-600F-7AE361D9414D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

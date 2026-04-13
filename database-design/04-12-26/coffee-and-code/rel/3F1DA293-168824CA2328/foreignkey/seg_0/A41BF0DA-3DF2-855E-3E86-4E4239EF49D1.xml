@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A41BF0DA-3DF2-855E-3E86-4E4239EF49D1" containerWithKeyObject="C6084E01-3A4A-BF27-7260-02F21806697A" localFKIndex="E895D220-85DD-DA17-BE93-3CDCE280C8B3" name="obedece_seguranca_regra_firewall_FK">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:17:37 UTC</createdTime>
+<generatorID>972C75F9-A0C6-C21C-54EC-4CE66473849B</generatorID>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<referredTableLongName>seguranca_regra_firewall</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>8319533C-A9C5-F50A-A1C9-FCFBCEF18638</referredTableID>
+<keyObject>B24FEA83-3F2F-0B4B-B184-07E2421247E0</keyObject>
+<referredKeyID>B24FEA83-3F2F-0B4B-B184-07E2421247E0</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_regra</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

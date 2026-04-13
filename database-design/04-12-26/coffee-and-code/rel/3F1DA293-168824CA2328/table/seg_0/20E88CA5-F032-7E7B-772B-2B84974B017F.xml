@@ -1,0 +1,109 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="20E88CA5-F032-7E7B-772B-2B84974B017F" name="usar">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:17:37 UTC</createdTime>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cliente_id_cliente" id="41F70E8B-53C9-F8B1-92C8-BC9FF535CCAF">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:17:37 UTC</createdTime>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5AB96777-DC4C-43B9-68E1-BFAD5644234A" referredColumn="8AF4014F-0F90-B8FF-494F-4F532CB974D3"/>
+</associations>
+</Column>
+<Column name="cliente_cpf_cliente" id="DFAE19B3-0FC2-09AE-7205-43BB7F450430">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:17:37 UTC</createdTime>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>14 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5AB96777-DC4C-43B9-68E1-BFAD5644234A" referredColumn="F84BEAF1-14BE-8B08-27D1-48D380C99471"/>
+</associations>
+</Column>
+<Column name="cliente_email_cliente" id="DC1ECFCB-4D31-D176-4A71-6C859C420554">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:17:37 UTC</createdTime>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5AB96777-DC4C-43B9-68E1-BFAD5644234A" referredColumn="321426B7-4CE6-D18D-4EEF-FB08AD70CE67"/>
+</associations>
+</Column>
+<Column name="equipamento_id_equipamento" id="80CFC287-1444-71B3-94CA-CDD638A2EEF0">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:17:37 UTC</createdTime>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="13FC7774-97FB-59BF-FF0E-F8E018AC7495" referredColumn="68FFFA7C-A63F-D5E7-1B8B-30A7E1F009FA"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C0AB3F03-DB30-B586-326E-C8E51DD0C9DF" name="usar_PK">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:17:37 UTC</createdTime>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="41F70E8B-53C9-F8B1-92C8-BC9FF535CCAF"/>
+<colUsage columnID="DFAE19B3-0FC2-09AE-7205-43BB7F450430"/>
+<colUsage columnID="DC1ECFCB-4D31-D176-4A71-6C859C420554"/>
+<colUsage columnID="80CFC287-1444-71B3-94CA-CDD638A2EEF0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7915466D-79D4-B92D-64E9-26182887E3F5" name="usar_cliente_FK">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:17:37 UTC</createdTime>
+<generatorID>B839AEE4-FBAF-CC5F-EF5E-4DF6D947F32B</generatorID>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="41F70E8B-53C9-F8B1-92C8-BC9FF535CCAF"/>
+<colUsage columnID="DFAE19B3-0FC2-09AE-7205-43BB7F450430"/>
+<colUsage columnID="DC1ECFCB-4D31-D176-4A71-6C859C420554"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="801CED1B-2CB9-35A5-68E0-56E3DE10ED3E" name="usar_equipamento_FK">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:17:37 UTC</createdTime>
+<generatorID>B839AEE4-FBAF-CC5F-EF5E-4DF6D947F32B</generatorID>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="80CFC287-1444-71B3-94CA-CDD638A2EEF0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

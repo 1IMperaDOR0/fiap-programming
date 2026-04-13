@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F47D7B25-0EBC-4138-3AC4-62A9A9136BF9" name="aluga">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:17:37 UTC</createdTime>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="livro_id_livro" id="E9211EC6-7965-3EDD-CA84-140BB16CFF2F">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:17:37 UTC</createdTime>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="34FFB108-50F5-78BC-590F-D2F33E650E4E" referredColumn="F81CDCE0-0FFF-52F4-A8B9-A7926FEE60B9"/>
+</associations>
+</Column>
+<Column name="emprestimo_cliente_id_emprestimo" id="5C493AB5-BA2A-350E-275E-05226E300C3A">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:17:37 UTC</createdTime>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AEF83376-8603-F756-DFB3-50B5BA8883E0" referredColumn="869887AB-AF29-5661-B824-8CA964DE573E"/>
+</associations>
+</Column>
+<Column name="emprestimo_cliente_id_cliente" id="6F635BBC-560B-EFF2-0982-6382383CC81B">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:17:37 UTC</createdTime>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AEF83376-8603-F756-DFB3-50B5BA8883E0" referredColumn="5B2B31C2-DC9F-9CCA-38E2-541166A59FDE"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="957FFB67-5AF7-1840-9817-5653339B6446" name="aluga_PK">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:17:37 UTC</createdTime>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E9211EC6-7965-3EDD-CA84-140BB16CFF2F"/>
+<colUsage columnID="5C493AB5-BA2A-350E-275E-05226E300C3A"/>
+<colUsage columnID="6F635BBC-560B-EFF2-0982-6382383CC81B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="95D92FBE-B475-7332-F437-6FC8BDF268F0" name="aluga_livro_FK">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:17:37 UTC</createdTime>
+<generatorID>7D96B868-EC50-EAB7-BF74-3A2702EB75A3</generatorID>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E9211EC6-7965-3EDD-CA84-140BB16CFF2F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EE68DD25-28BA-132A-2212-CA157A2797C9" name="aluga_emprestimo_cliente_FK">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:17:37 UTC</createdTime>
+<generatorID>7D96B868-EC50-EAB7-BF74-3A2702EB75A3</generatorID>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5C493AB5-BA2A-350E-275E-05226E300C3A"/>
+<colUsage columnID="6F635BBC-560B-EFF2-0982-6382383CC81B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

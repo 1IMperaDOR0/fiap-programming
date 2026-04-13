@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="aluga" directorySegmentName="seg_0" id="7D96B868-EC50-EAB7-BF74-3A2702EB75A3">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:17:11 UTC</createdTime>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<engineerTo>
+<item key="3F1DA293-2A1D-A4B6-2B63-168824CA2328" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>DD0B3370-D151-0615-96E1-28D3435CE3AF</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>19DAF80E-512A-8864-ADB6-49800EC4CA67</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

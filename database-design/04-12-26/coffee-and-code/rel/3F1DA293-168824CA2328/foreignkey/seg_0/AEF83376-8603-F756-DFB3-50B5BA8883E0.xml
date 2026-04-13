@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="AEF83376-8603-F756-DFB3-50B5BA8883E0" containerWithKeyObject="F47D7B25-0EBC-4138-3AC4-62A9A9136BF9" localFKIndex="EE68DD25-28BA-132A-2212-CA157A2797C9" name="aluga_emprestimo_cliente_FK">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-13 19:17:37 UTC</createdTime>
+<generatorID>7D96B868-EC50-EAB7-BF74-3A2702EB75A3</generatorID>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<referredTableLongName>emprestimo_cliente</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>4A707C96-811C-E20B-491E-1023E711D2CC</referredTableID>
+<keyObject>BB5D0A5B-1724-A302-23C2-62C169CC7F52</keyObject>
+<referredKeyID>BB5D0A5B-1724-A302-23C2-62C169CC7F52</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_emprestimo,id_cliente</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
