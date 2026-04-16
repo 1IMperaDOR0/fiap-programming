@@ -4,10 +4,10 @@ import br.com.fiap.bean.Geometria;
 
 import javax.swing.*;
 
-public class Main {
+public class MainGeometria {
     public static void main(String[] args) {
         Geometria geo = new Geometria();
-        
+
         float lado, altura;
         double raio;
         int area;

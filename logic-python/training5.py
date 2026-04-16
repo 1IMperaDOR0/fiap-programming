@@ -7,6 +7,7 @@ acougue = {
     'Estoque' : [10,50,30,15,20,100],
     'Validade' : [4,7,5,9,20,50]
 }
+
 def forca_opcao(msg,lista_opcoes):
     opcoes = '\n'.join(lista_opcoes)
     opcao = input(f"{msg}\n{opcoes}\n->")
