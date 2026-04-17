@@ -91,14 +91,59 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="id_cliente" id="EBD33CE4-21D3-39E8-93ED-03DE9154922D">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-17 02:10:32 UTC</createdTime>
+<generatorID>B839AEE4-FBAF-CC5F-EF5E-4DF6D947F32B</generatorID>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<engineerTo>
+<item key="3F1DA293-2A1D-A4B6-2B63-168824CA2328" value="true"/>
+</engineerTo>
+<referedAttribute>22DA4ED9-A7E0-9C81-0A37-0B656EAA224C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cpf_cliente" id="4C563AEC-4141-E94F-4CA7-303ABAC5384E">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-17 02:10:32 UTC</createdTime>
+<generatorID>B839AEE4-FBAF-CC5F-EF5E-4DF6D947F32B</generatorID>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<engineerTo>
+<item key="3F1DA293-2A1D-A4B6-2B63-168824CA2328" value="true"/>
+</engineerTo>
+<referedAttribute>58909E8A-D479-052B-D4B2-174B4FC13E1E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>14 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="email_cliente" id="7028462E-5DCD-B677-E065-717317700DDF">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-17 02:10:32 UTC</createdTime>
+<generatorID>B839AEE4-FBAF-CC5F-EF5E-4DF6D947F32B</generatorID>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<engineerTo>
+<item key="3F1DA293-2A1D-A4B6-2B63-168824CA2328" value="true"/>
+</engineerTo>
+<referedAttribute>5C0DE7A6-8C7C-3833-4136-9E8C42F968F7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="EBF25012-96D9-0183-8BC8-403C261B1868" name="equipamento PK">
 <createdBy>lucas</createdBy>
 <createdTime>2026-04-13 02:17:09 UTC</createdTime>
 <ownerDesignName>coffee-and-code</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="3F1DA293-2A1D-A4B6-2B63-168824CA2328" value="true"/>
+<item key="3F1DA293-2A1D-A4B6-2B63-168824CA2328" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

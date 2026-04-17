@@ -79,14 +79,57 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="id_sessao" id="F7AB9953-6CBA-E4CB-D84C-C1DEEE137C34">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-17 02:12:52 UTC</createdTime>
+<generatorID>F971094F-22B2-51EA-D9C6-7426A2D4D490</generatorID>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<engineerTo>
+<item key="3F1DA293-2A1D-A4B6-2B63-168824CA2328" value="true"/>
+</engineerTo>
+<referedAttribute>3D35B154-9F53-7777-13B6-6C5BD5683B94</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_cliente" id="9BB5E877-F2C7-008C-4867-1C9EB04EDD29">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-17 02:12:52 UTC</createdTime>
+<generatorID>F971094F-22B2-51EA-D9C6-7426A2D4D490</generatorID>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<engineerTo>
+<item key="3F1DA293-2A1D-A4B6-2B63-168824CA2328" value="true"/>
+</engineerTo>
+<referedAttribute>6712715E-EC2F-62E0-3B88-CDEDC301309C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_equipamento" id="FA6E9981-8B62-A2B7-80D7-B82D35F9F2AF">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-17 02:12:52 UTC</createdTime>
+<generatorID>F971094F-22B2-51EA-D9C6-7426A2D4D490</generatorID>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<engineerTo>
+<item key="3F1DA293-2A1D-A4B6-2B63-168824CA2328" value="true"/>
+</engineerTo>
+<referedAttribute>8D5BDD97-E998-5852-31B4-59C39A6F3FCB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="DF782BEE-100C-E383-13DA-1022CF8EE584" name="jogo_instalado PK">
 <createdBy>lucas</createdBy>
 <createdTime>2026-04-13 19:02:48 UTC</createdTime>
 <ownerDesignName>coffee-and-code</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="3F1DA293-2A1D-A4B6-2B63-168824CA2328" value="true"/>
+<item key="3F1DA293-2A1D-A4B6-2B63-168824CA2328" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

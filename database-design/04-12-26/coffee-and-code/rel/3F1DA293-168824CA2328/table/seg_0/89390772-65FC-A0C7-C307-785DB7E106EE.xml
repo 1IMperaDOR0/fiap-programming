@@ -65,6 +65,21 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="receita_bebida_id_bebida" id="22CD7A76-DB35-F688-3CD8-92E4E9243C34">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-17 02:14:09 UTC</createdTime>
+<generatorID>BD05F8C7-E783-74DE-0099-6A26CFC3D143</generatorID>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FDCA1D5D-ED4E-B322-C4C0-A98612C11D3C" referredColumn="E388EAB1-A9ED-BB2F-9489-AFFD50C4F27D"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="FE492F0D-25FC-0918-21BC-DF1B547E4664" name="pedido_bar_PK">
@@ -78,6 +93,17 @@
 <indexColumnUsage>
 <colUsage columnID="3F948FA7-C46E-4ECF-E991-394EE7E75448"/>
 <colUsage columnID="E7953699-8828-100C-A8B9-EF9A679D3C02"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5FD21FAB-9B4A-F9AD-B820-AE715A9A065A" name="pedido_bar_receita_bebida_FK">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-17 02:14:09 UTC</createdTime>
+<generatorID>5B892ED5-C5E0-41AF-0B05-02BE0D5A26EF</generatorID>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="22CD7A76-DB35-F688-3CD8-92E4E9243C34"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

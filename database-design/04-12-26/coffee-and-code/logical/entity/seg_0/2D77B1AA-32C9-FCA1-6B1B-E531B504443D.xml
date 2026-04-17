@@ -77,14 +77,29 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="id_bebida" id="BD05F8C7-E783-74DE-0099-6A26CFC3D143">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-17 02:12:37 UTC</createdTime>
+<generatorID>5B892ED5-C5E0-41AF-0B05-02BE0D5A26EF</generatorID>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<engineerTo>
+<item key="3F1DA293-2A1D-A4B6-2B63-168824CA2328" value="true"/>
+</engineerTo>
+<referedAttribute>C366147E-A935-5767-8C39-DDC1B6C4C6CD</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="47225ACD-F8B6-A68E-A635-7A3156020705" name="pedido_bar PK">
 <createdBy>lucas</createdBy>
 <createdTime>2026-04-13 03:31:32 UTC</createdTime>
 <ownerDesignName>coffee-and-code</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="3F1DA293-2A1D-A4B6-2B63-168824CA2328" value="true"/>
+<item key="3F1DA293-2A1D-A4B6-2B63-168824CA2328" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

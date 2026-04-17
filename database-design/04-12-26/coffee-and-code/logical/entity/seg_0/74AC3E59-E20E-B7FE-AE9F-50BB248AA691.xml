@@ -90,14 +90,29 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="id_camera" id="A4E8CD37-A085-EBB8-A956-E4E64487E4D2">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-17 02:13:03 UTC</createdTime>
+<generatorID>972C75F9-A0C6-C21C-54EC-4CE66473849B</generatorID>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<engineerTo>
+<item key="3F1DA293-2A1D-A4B6-2B63-168824CA2328" value="true"/>
+</engineerTo>
+<referedAttribute>48D00CC3-D69A-CBC3-7F92-0F9EABE62FDE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="2425F878-20CD-967F-3B81-29C700C06ED4" name="seguranca_regra_firewall PK">
 <createdBy>lucas</createdBy>
 <createdTime>2026-04-13 19:09:40 UTC</createdTime>
 <ownerDesignName>coffee-and-code</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="3F1DA293-2A1D-A4B6-2B63-168824CA2328" value="true"/>
+<item key="3F1DA293-2A1D-A4B6-2B63-168824CA2328" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

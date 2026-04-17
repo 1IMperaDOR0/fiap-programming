@@ -76,6 +76,21 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="receita_comida_id_receita" id="CC79B8F9-BA81-9B10-07BA-2374FA946BF0">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-17 02:14:09 UTC</createdTime>
+<generatorID>C4DEB7CC-6865-1CCD-CEA9-0758C57DE822</generatorID>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E43005CD-279A-520E-4B1F-248239D5ED64" referredColumn="3A07B787-E9FA-6900-28B9-D65B607A958B"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="366A396E-807A-4D9C-B87A-0AC1EBCF73B3" name="estoque_cozinha_PK">
@@ -88,6 +103,17 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="F4D21EE4-F6B8-2A65-A8C1-60172321EEC2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6F7F9178-78A4-EE81-D208-EE22335ACF40" name="estoque_cozinha_receita_comida_FK">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-17 02:14:09 UTC</createdTime>
+<generatorID>D6851C91-36C4-FF76-D4FB-7A3BAD454FAA</generatorID>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CC79B8F9-BA81-9B10-07BA-2374FA946BF0"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

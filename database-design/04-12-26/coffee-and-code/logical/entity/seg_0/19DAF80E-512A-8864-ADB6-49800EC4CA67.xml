@@ -78,14 +78,29 @@
 <dataTypeScale>2</dataTypeScale>
 <ownDataTypeParameters>,8,2</ownDataTypeParameters>
 </Attribute>
+<Attribute name="id_livro" id="AABF60E9-1721-88A5-B58E-09696A392513">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-17 02:13:38 UTC</createdTime>
+<generatorID>7D96B868-EC50-EAB7-BF74-3A2702EB75A3</generatorID>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<engineerTo>
+<item key="3F1DA293-2A1D-A4B6-2B63-168824CA2328" value="true"/>
+</engineerTo>
+<referedAttribute>323D724D-B436-AB45-2909-DED85C0A58B6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="A03D4EC2-9DA1-B202-D14A-1A571A3CF4B6" name="emprestimo_cliente PK">
 <createdBy>lucas</createdBy>
 <createdTime>2026-04-13 19:15:46 UTC</createdTime>
 <ownerDesignName>coffee-and-code</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="3F1DA293-2A1D-A4B6-2B63-168824CA2328" value="true"/>
+<item key="3F1DA293-2A1D-A4B6-2B63-168824CA2328" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

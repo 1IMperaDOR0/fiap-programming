@@ -78,6 +78,53 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="cliente_id_cliente" id="FA2382C2-4AFC-3D17-E235-FAE053D6E6FE">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-17 02:14:09 UTC</createdTime>
+<generatorID>EBD33CE4-21D3-39E8-93ED-03DE9154922D</generatorID>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B24AD93E-08F1-28E4-04FE-115CDEE6E1C5" referredColumn="8AF4014F-0F90-B8FF-494F-4F532CB974D3"/>
+</associations>
+</Column>
+<Column name="cliente_cpf_cliente" id="088B9DDC-FEC7-2012-4C06-B03CA3A77A88">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-17 02:14:09 UTC</createdTime>
+<generatorID>4C563AEC-4141-E94F-4CA7-303ABAC5384E</generatorID>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>14 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B24AD93E-08F1-28E4-04FE-115CDEE6E1C5" referredColumn="F84BEAF1-14BE-8B08-27D1-48D380C99471"/>
+</associations>
+</Column>
+<Column name="cliente_email_cliente" id="2C67FE0E-09E7-FFB6-AB74-2CE35FE7E152">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-17 02:14:09 UTC</createdTime>
+<generatorID>7028462E-5DCD-B677-E065-717317700DDF</generatorID>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B24AD93E-08F1-28E4-04FE-115CDEE6E1C5" referredColumn="321426B7-4CE6-D18D-4EEF-FB08AD70CE67"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="1BD8B486-0701-4CFB-E9DD-037F7C4A0851" name="equipamento_PK">
@@ -90,6 +137,19 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="68FFFA7C-A63F-D5E7-1B8B-30A7E1F009FA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="98AFE31B-9646-723A-2F40-B76D64757363" name="equipamento_cliente_FK">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-17 02:14:09 UTC</createdTime>
+<generatorID>B839AEE4-FBAF-CC5F-EF5E-4DF6D947F32B</generatorID>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FA2382C2-4AFC-3D17-E235-FAE053D6E6FE"/>
+<colUsage columnID="088B9DDC-FEC7-2012-4C06-B03CA3A77A88"/>
+<colUsage columnID="2C67FE0E-09E7-FFB6-AB74-2CE35FE7E152"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

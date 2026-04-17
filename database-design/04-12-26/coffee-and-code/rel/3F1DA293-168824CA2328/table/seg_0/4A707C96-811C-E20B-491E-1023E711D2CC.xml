@@ -66,6 +66,21 @@
 <ownDataTypeParameters>,8,2</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="livro_id_livro" id="CEA1FCCC-13B6-1F86-383A-E569C4E3CAB2">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-17 02:14:09 UTC</createdTime>
+<generatorID>AABF60E9-1721-88A5-B58E-09696A392513</generatorID>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EBF4C021-F1A0-011E-6C9A-42CCCA0393FC" referredColumn="F81CDCE0-0FFF-52F4-A8B9-A7926FEE60B9"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="BB5D0A5B-1724-A302-23C2-62C169CC7F52" name="emprestimo_cliente_PK">
@@ -79,6 +94,17 @@
 <indexColumnUsage>
 <colUsage columnID="869887AB-AF29-5661-B824-8CA964DE573E"/>
 <colUsage columnID="5B2B31C2-DC9F-9CCA-38E2-541166A59FDE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="932211E4-A3D8-E1C7-4C42-AAFDE5C46113" name="emprestimo_cliente_livro_FK">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-17 02:14:09 UTC</createdTime>
+<generatorID>7D96B868-EC50-EAB7-BF74-3A2702EB75A3</generatorID>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CEA1FCCC-13B6-1F86-383A-E569C4E3CAB2"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

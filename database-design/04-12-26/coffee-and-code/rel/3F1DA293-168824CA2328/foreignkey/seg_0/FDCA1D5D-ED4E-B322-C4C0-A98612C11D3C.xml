@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="FDCA1D5D-ED4E-B322-C4C0-A98612C11D3C" containerWithKeyObject="89390772-65FC-A0C7-C307-785DB7E106EE" localFKIndex="5FD21FAB-9B4A-F9AD-B820-AE715A9A065A" name="pedido_bar_receita_bebida_FK">
+<createdBy>lucas</createdBy>
+<createdTime>2026-04-17 02:14:09 UTC</createdTime>
+<generatorID>5B892ED5-C5E0-41AF-0B05-02BE0D5A26EF</generatorID>
+<ownerDesignName>coffee-and-code</ownerDesignName>
+<referredTableLongName>receita_bebida</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>2E34E4B8-1D97-007D-45B0-103B03F6375F</referredTableID>
+<keyObject>894A82E6-C0B1-A06E-28B8-12868DDBC7B9</keyObject>
+<referredKeyID>894A82E6-C0B1-A06E-28B8-12868DDBC7B9</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_bebida</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
