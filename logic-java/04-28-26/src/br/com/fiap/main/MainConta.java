@@ -24,7 +24,7 @@ public class MainConta {
                 float saldo = Float.parseFloat(JOptionPane.showInputDialog("Digite o saldo inicial:"));
                 float deposito = Float.parseFloat(JOptionPane.showInputDialog("Digite o valor para depósito:"));
                 float saque = Float.parseFloat(JOptionPane.showInputDialog("Digite o valor para saque:"));
-                switch (tipo) {
+                switch(tipo) {
                     case "1":
                         ContaBancaria conta = new ContaBancaria();
                         conta.setCliente(nome);
@@ -99,7 +99,7 @@ public class MainConta {
                         throw new Exception("Opção inválida!");
                 }
                 continuar = JOptionPane.showInputDialog("Deseja continuar? (s/n)");
-            } catch (Exception e) {
+            } catch(Exception e) {
                 JOptionPane.showMessageDialog(null, "Erro: " + e.getMessage());
             }
         }
