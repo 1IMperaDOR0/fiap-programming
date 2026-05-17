@@ -1,10 +1,10 @@
 package br.com.fiap.main;
 
-import br.com.fiap.bean.ContaPoupanca;
+import br.com.fiap.bean.ContaEspecial;
 
 import javax.swing.*;
 
-public class MainConta {
+public class MainConta2 {
     public static void main(String[] args) {
         String aux, continuar = "s";
         int numConta, opcao;
@@ -14,27 +14,27 @@ public class MainConta {
             try {
                 aux = JOptionPane.showInputDialog("Digite o número da conta:");
                 numConta = Integer.parseInt(aux);
-                aux = JOptionPane.showInputDialog("Digite o seu saldo:");
+                aux = JOptionPane.showInputDialog("Digite o saldo da conta:");
                 saldo = Float.parseFloat(aux);
 
-                ContaPoupanca poupanca = new ContaPoupanca();
-                poupanca.setNumConta(numConta);
-                poupanca.setSaldo(saldo);
+                ContaEspecial especial = new ContaEspecial();
+                especial.setNumConta(numConta);
+                especial.setSaldo(saldo);
 
-                aux = JOptionPane.showInputDialog("Qual operação você deseja executar?\n1. Saque\n2. Deposito");
+                aux = JOptionPane.showInputDialog("Qual operação você deseja?\n1. Saque\n2. Depósito");
                 opcao = Integer.parseInt(aux);
                 switch(opcao) {
                     case 1:
-                        aux = JOptionPane.showInputDialog("Digite o valor do saque:");
+                        aux = JOptionPane.showInputDialog("Qual o valor do saque?");
                         valor = Float.parseFloat(aux);
-                        poupanca.sacar(valor);
-                        JOptionPane.showMessageDialog(null, String.format("DADOS DA CONTA:\nNúmero: %d\nSaldo atual: %.2f", poupanca.getNumConta(), poupanca.getSaldo()));
+                        especial.sacar(valor);
+                        JOptionPane.showMessageDialog(null, String.format("DADOS DA CONTA:\nNúmero: %d\nSaldo atual: %.2f", especial.getNumConta(), especial.getSaldo()));
                         break;
                     case 2:
-                        aux = JOptionPane.showInputDialog("Digite o valor do deposito:");
+                        aux = JOptionPane.showInputDialog("Qual o valor do depósito?");
                         valor = Float.parseFloat(aux);
-                        poupanca.depositar(valor);
-                        JOptionPane.showMessageDialog(null, String.format("DADOS DA CONTA:\nNúmero: %d\nSaldo atual: %.2f", poupanca.getNumConta(), poupanca.getSaldo()));
+                        especial.depositar(valor);
+                        JOptionPane.showMessageDialog(null, String.format("DADOS DA CONTA:\nNúmero: %d\nSaldo atual: %.2f", especial.getNumConta(), especial.getSaldo()));
                         break;
                     default:
                         throw new Exception("Opção inválida!");

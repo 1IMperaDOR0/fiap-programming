@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6417e1e9-7856-40ce-973f-e13dd8b8d043" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../05-11-26/src/br/com/fiap/bean/ContaEspecial.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../05-11-26/src/br/com/fiap/main/MainConta2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/br/com/fiap/bean/Freelancer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/br/com/fiap/bean/Funcionario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/br/com/fiap/bean/Vendedor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/br/com/fiap/bean/VigiaNoturno.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/br/com/fiap/main/GUIFreelancer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/br/com/fiap/main/GUIPrincipal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/br/com/fiap/main/GUIVendedor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/br/com/fiap/main/GUIVigiaNoturno.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/br/com/fiap/main/MainPagamento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../05-11-26/src/br/com/fiap/bean/ContaPoupanca.java" beforeDir="false" afterPath="$PROJECT_DIR$/../05-11-26/src/br/com/fiap/bean/ContaPoupanca.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../05-11-26/src/br/com/fiap/main/MainConta.java" beforeDir="false" afterPath="$PROJECT_DIR$/../05-11-26/src/br/com/fiap/main/MainConta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/05-12-26.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/05-12-26.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/05-12-26/bean/Freelancer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/05-12-26/bean/Funcionario.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/05-12-26/bean/Vendedor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/05-12-26/bean/VigiaNoturno.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/05-12-26/main/Pagamento.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bean/Freelancer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bean/Funcionario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bean/Vendedor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bean/VigiaNoturno.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/GUIFreelancer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/GUIPrincipal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Pagamento.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/images/exit_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/images/freelancer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/images/vendedor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/images/vigia_noturno.png" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="3DcdVH7FGl1ldvYlT09LU0Q3UU9" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.GUIPrincipal.executor": "Run",
+    "Application.MainPagamento.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/henri/OneDrive/Área de Trabalho/FIAP/3º ~ 4º Semestre FIAP/Domain Driven Design - Java/Aula12Maio_JPanel/Aula26/src/br/com/fiap/main",
+    "settings.editor.selected.configurable": "inlay.hints"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\henri\OneDrive\Área de Trabalho\FIAP\3º ~ 4º Semestre FIAP\Domain Driven Design - Java\Aula12Maio_JPanel\Aula26\src\br\com\fiap\main" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\FIAP\fiap-programming\logic-java\Aula26\.idea" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.31033.145" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6417e1e9-7856-40ce-973f-e13dd8b8d043" name="Changes" comment="" />
+      <created>1778585316058</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1778585316058</updated>
+    </task>
+    <servers />
+  </component>
+</project>

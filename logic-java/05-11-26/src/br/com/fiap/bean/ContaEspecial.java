@@ -2,11 +2,12 @@ package br.com.fiap.bean;
 
 import javax.swing.*;
 
-public class ContaPoupanca implements ContaBancaria {
+public class ContaEspecial implements ContaBancaria {
     private int numConta;
     private float saldo;
+    private float limite;
 
-    public ContaPoupanca() {}
+    public ContaEspecial() {}
 
     public int getNumConta() {
         return numConta;
@@ -24,15 +25,23 @@ public class ContaPoupanca implements ContaBancaria {
         this.saldo = saldo;
     }
 
+    public float getLimite() {
+        return limite;
+    }
+
+    public void setLimite(float limite) {
+        this.limite = limite;
+    }
+
     @Override
     public float sacar(float valor) {
         try {
-            if(saldo >= valor) {
+            if(saldo+limite >= valor) {
                 saldo -= valor;
             } else {
                 throw new Exception("Saldo insuficiente!");
             }
-        } catch (Exception e) {
+        } catch(Exception e) {
             JOptionPane.showMessageDialog(null, e.getMessage());
         }
         return saldo;
