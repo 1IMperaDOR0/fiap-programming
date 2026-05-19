@@ -5,38 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6417e1e9-7856-40ce-973f-e13dd8b8d043" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../05-11-26/src/br/com/fiap/bean/ContaEspecial.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../05-11-26/src/br/com/fiap/main/MainConta2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/fiap/bean/Freelancer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/fiap/bean/Funcionario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/fiap/bean/Vendedor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/fiap/bean/VigiaNoturno.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/fiap/main/GUIFreelancer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/fiap/main/GUIPrincipal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/fiap/main/GUIVendedor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/fiap/main/GUIVigiaNoturno.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/fiap/main/MainPagamento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../05-11-26/src/br/com/fiap/bean/ContaPoupanca.java" beforeDir="false" afterPath="$PROJECT_DIR$/../05-11-26/src/br/com/fiap/bean/ContaPoupanca.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../05-11-26/src/br/com/fiap/main/MainConta.java" beforeDir="false" afterPath="$PROJECT_DIR$/../05-11-26/src/br/com/fiap/main/MainConta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/05-12-26.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/05-12-26.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/05-12-26/bean/Freelancer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/05-12-26/bean/Funcionario.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/05-12-26/bean/Vendedor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/05-12-26/bean/VigiaNoturno.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/05-12-26/main/Pagamento.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bean/Freelancer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bean/Funcionario.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bean/Vendedor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bean/VigiaNoturno.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/GUIFreelancer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/GUIPrincipal.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Pagamento.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/images/exit_icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/images/freelancer.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/images/vendedor.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/images/vigia_noturno.png" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../05-19-26/src/br/com/fiap/bean/Quadrado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../05-19-26/src/br/com/fiap/bean/Retangulo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../05-19-26/src/br/com/fiap/bean/Triangulo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../05-19-26/src/br/com/fiap/main/GUIAreas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../05-19-26/src/br/com/fiap/main/GUIPrincipal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../05-19-26/src/br/com/fiap/main/images/exit_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../05-19-26/src/br/com/fiap/main/images/quadrado.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../05-19-26/src/br/com/fiap/main/images/question.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../05-19-26/src/br/com/fiap/main/images/retangulo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../05-19-26/src/br/com/fiap/main/images/triangulo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,10 +48,13 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/henri/OneDrive/Área de Trabalho/FIAP/3º ~ 4º Semestre FIAP/Domain Driven Design - Java/Aula12Maio_JPanel/Aula26/src/br/com/fiap/main",
-    "settings.editor.selected.configurable": "inlay.hints"
+    "last_opened_file_path": "C:/AllThings/fiap-programming/logic-java/05-12-26",
+    "settings.editor.selected.configurable": "inlay.hints",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -86,7 +68,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.31033.145" />
+        <option value="bundled-jdk-30f59d01ecdd-37e91769500f-intellij.indexing.shared.core-IU-261.24374.151" />
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-IU-261.24374.151" />
       </set>
     </attachedChunks>
   </component>
@@ -97,7 +80,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1778585316058</updated>
+      <workItem from="1779201883442" duration="597000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>
