@@ -1,14 +1,16 @@
 package br.com.fiap.bean;
 
 import javax.swing.*;
+import java.util.ArrayList;
+import java.util.Collections;
 
 public class Equipe {
     private String nome;
-    private String[] integrantes;
+    private ArrayList<String> integrantes;
 
     public Equipe() {}
 
-    public Equipe(String nome, String[] integrantes) {
+    public Equipe(String nome, ArrayList<String> integrantes) {
         this.nome = nome;
         this.integrantes = integrantes;
     }
@@ -21,16 +23,17 @@ public class Equipe {
         this.nome = nome;
     }
 
-    public String[] getIntegrantes() {
+    public ArrayList<String> getIntegrantes() {
         return integrantes;
     }
 
-    public void setIntegrantes(String[] integrantes) {
+    public void setIntegrantes(ArrayList<String> integrantes) {
         this.integrantes = integrantes;
     }
 
     public void listarEquipe() {
-        String exibe = String.format("Nome da Equipe: %s\n", getNome());
+        String exibe = String.format("Nome da Equipe: %s\n", nome);
+        Collections.sort(integrantes);
         int cont = 1;
         for(String e: integrantes) {
             exibe += String.format("Integrante %d: %s\n", cont, e);

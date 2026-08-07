@@ -5,16 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6417e1e9-7856-40ce-973f-e13dd8b8d043" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../05-19-26/src/br/com/fiap/bean/Quadrado.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../05-19-26/src/br/com/fiap/bean/Retangulo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../05-19-26/src/br/com/fiap/bean/Triangulo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../05-19-26/src/br/com/fiap/main/GUIAreas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../05-19-26/src/br/com/fiap/main/GUIPrincipal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../05-19-26/src/br/com/fiap/main/images/exit_icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../05-19-26/src/br/com/fiap/main/images/quadrado.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../05-19-26/src/br/com/fiap/main/images/question.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../05-19-26/src/br/com/fiap/main/images/retangulo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../05-19-26/src/br/com/fiap/main/images/triangulo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,22 +31,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.GUIPrincipal.executor": "Run",
-    "Application.MainPagamento.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/AllThings/fiap-programming/logic-java/05-12-26",
-    "settings.editor.selected.configurable": "inlay.hints",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.GUIPrincipal.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MainPagamento.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/AllThings/fiap-programming/logic-java/05-12-26&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;inlay.hints&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\henri\OneDrive\Área de Trabalho\FIAP\3º ~ 4º Semestre FIAP\Domain Driven Design - Java\Aula12Maio_JPanel\Aula26\src\br\com\fiap\main" />
@@ -81,6 +72,7 @@
       <option name="presentableId" value="Default" />
       <updated>1778585316058</updated>
       <workItem from="1779201883442" duration="597000" />
+      <workItem from="1784161945044" duration="10000" />
     </task>
     <servers />
   </component>

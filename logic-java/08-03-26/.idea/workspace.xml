@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f1a9ca9-fea2-45ff-bbae-a177f3739e71" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/br/com/fiap/bean/Equipe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/fiap/main/MainEquipe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/fiap/main/Vetores.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../08-04-26/src/br/com/fiap/bean/Equipe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../08-04-26/src/br/com/fiap/main/Vetores.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../05-12-26/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../05-12-26/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/fiap/bean/Equipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/fiap/bean/Equipe.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,10 +23,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7,
-  "fromUser": false
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7,
+  &quot;fromUser&quot;: false
+}</component>
   <component name="ProjectId" id="3HOzLUSaSRZD1m1eAJMtUsFOYEV" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -37,10 +39,13 @@
     "Application.Vetores.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/AllThings/fiap-programming/logic-java/08-03-26",
     "onboarding.tips.debug.path": "C:/Users/labsfiap/Downloads/fiap-programming/logic-java/08-03-26/src/Main.java",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
@@ -52,6 +57,14 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\labsfiap\Downloads\fiap-programming\logic-java\08-03-26\.idea" />
     </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-37e91769500f-intellij.indexing.shared.core-IU-261.24374.151" />
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-IU-261.24374.151" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
