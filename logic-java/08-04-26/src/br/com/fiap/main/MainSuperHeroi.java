@@ -14,19 +14,19 @@ public class MainSuperHeroi {
                 nome = JOptionPane.showInputDialog("Digite o nome do super-herói:");
                 identidade = JOptionPane.showInputDialog(String.format("Qual é a identidade secreta do super-herói %s", nome));
                 ArrayList<String> poderes = new ArrayList<>();
-                while(!poder.equalsIgnoreCase("fim")) {
+                do {
                     poder = JOptionPane.showInputDialog(String.format("Digite um poder do super-herói %s ou digite \"fim\" para prosseguir:", nome));
                     if(!poder.equalsIgnoreCase("fim")) {
                         poderes.add(poder);
                     }
-                }
+                } while(!poder.equalsIgnoreCase("fim"));
                 ArrayList<String> fraquezas = new ArrayList<>();
-                while(!fraqueza.equalsIgnoreCase("fim")) {
+                do {
                     fraqueza = JOptionPane.showInputDialog(String.format("Digite uma fraqueza do super-herói %s ou digite \"fim\" para prosseguir:", nome));
                     if(!fraqueza.equalsIgnoreCase("fim")) {
                         fraquezas.add(fraqueza);
                     }
-                }
+                } while(!fraqueza.equalsIgnoreCase("fim"));
                 SuperHeroi heroi = new SuperHeroi(nome, identidade, poderes, fraquezas);
                 heroi.listarHeroi();
                 continuar = JOptionPane.showInputDialog("Você quer continuar? (s/n)");
