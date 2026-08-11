@@ -1,16 +1,16 @@
 package br.com.fiap.main;
 
 import javax.swing.*;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
+import java.util.stream.Collectors;
 
-public class PokemonHashMap {
+public class PokemonComStream {
     public static void main(String[] args) {
         HashMap<String, String> pokemons = new HashMap<>();
         do {
             try {
                 String nome, tipo;
+
                 do {
                     nome = JOptionPane.showInputDialog("Digite o nome de um Pokémon ou digite \"fim\" para encerrar").toUpperCase();
                     if (!nome.equals("FIM")) {
@@ -25,22 +25,24 @@ public class PokemonHashMap {
                 } while (!nome.equals("FIM"));
 
                 String escolha = JOptionPane.showInputDialog("Digite um tipo qualquer a sua escolha").toUpperCase();
-                String nomesEncontrados = "";
-                for (Map.Entry<String, String> entrada : pokemons.entrySet()) {
-                    if (entrada.getValue().equals(escolha)) {
-                        nomesEncontrados += entrada.getKey() + "\n";
-                    }
-                }
 
-                JOptionPane.showMessageDialog(null, String.format("Para o tipo: %s foram encontrado(s) o(s) pokémon(s):\n%s", escolha, nomesEncontrados), "Pokémons",
+                String nomesEncontrados = pokemons.entrySet().stream()
+                        .filter(entrada -> entrada.getValue().equals(escolha))
+                        .map(Map.Entry::getKey)
+                        .collect(Collectors.joining("\n"));
+
+                JOptionPane.showMessageDialog(null,
+                        String.format("Para o tipo: %s foram encontrado(s) o(s) pokémon(s):\n%s", escolha, nomesEncontrados),
+                        "Pokémons",
                         JOptionPane.INFORMATION_MESSAGE);
+
             } catch (Exception e) {
-                JOptionPane.showMessageDialog(null, e.getMessage(), "Erro", JOptionPane
-                        .ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(null, e.getMessage(), "Erro", JOptionPane.ERROR_MESSAGE);
             }
-        } while (JOptionPane.showConfirmDialog(null, "Deseja continuar?", "Atenção", JOptionPane
-                .YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE) == 0);
-        JOptionPane.showMessageDialog(null, "Programa finalizado!", "Adeus", JOptionPane
-                .WARNING_MESSAGE);
+
+        } while (JOptionPane.showConfirmDialog(null, "Deseja continuar?", "Atenção",
+                JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE) == 0);
+
+        JOptionPane.showMessageDialog(null, "Programa finalizado!", "Adeus", JOptionPane.WARNING_MESSAGE);
     }
 }
