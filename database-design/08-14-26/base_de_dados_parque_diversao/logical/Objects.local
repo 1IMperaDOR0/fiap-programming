@@ -1,0 +1,6 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.logical.LogicalDesign>
+   <object objectType="Entity" objectID="CD8AC076-55EF-D65D-5332-DAD27C584ED1" name="lista_brinqd" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="A87DE234-83BB-DCEF-3590-6C5972406427" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Entity" objectID="4B3DECC1-0435-2953-3EE0-56E6D8067510" name="local_brinqd" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="A87DE234-83BB-DCEF-3590-6C5972406427" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Relation" objectID="02FE9084-C675-40AB-171A-884E0F45B428" name="Relation_4" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Relation" propertyParentId="A87DE234-83BB-DCEF-3590-6C5972406427" propertySourceId="CD8AC076-55EF-D65D-5332-DAD27C584ED1" propertyTargetId="4B3DECC1-0435-2953-3EE0-56E6D8067510"/>
+</oracle.dbtools.crest.model.design.logical.LogicalDesign>

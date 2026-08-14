@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="CD8AC076-55EF-D65D-5332-DAD27C584ED1" name="lista_brinqd">
+<createdBy>labsfiap</createdBy>
+<createdTime>2026-08-14 12:12:01 UTC</createdTime>
+<ownerDesignName>base_de_dados_parque_diversao</ownerDesignName>
+<engineerTo>
+<item key="C1850D45-28AA-F176-BC22-560A2B03A6AC" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_brinqd" id="35FE4DF9-9DCF-82E5-FD86-88DD8E0065EA">
+<createdBy>labsfiap</createdBy>
+<createdTime>2026-08-14 12:12:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[id do brinquedo]]></commentInRDBMS>
+<ownerDesignName>base_de_dados_parque_diversao</ownerDesignName>
+<engineerTo>
+<item key="C1850D45-28AA-F176-BC22-560A2B03A6AC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nome_brinqd" id="B9FC0ED0-ED5A-B1AE-E9A5-C921E794488B">
+<createdBy>labsfiap</createdBy>
+<createdTime>2026-08-14 12:13:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[nome do brinquedo]]></commentInRDBMS>
+<ownerDesignName>base_de_dados_parque_diversao</ownerDesignName>
+<engineerTo>
+<item key="C1850D45-28AA-F176-BC22-560A2B03A6AC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="valor_unit" id="0C838938-C3A8-2DCD-BEC3-4DF2C6DCEF71">
+<createdBy>labsfiap</createdBy>
+<createdTime>2026-08-14 12:14:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[valor cobrado pelo ingresso individual]]></commentInRDBMS>
+<ownerDesignName>base_de_dados_parque_diversao</ownerDesignName>
+<engineerTo>
+<item key="C1850D45-28AA-F176-BC22-560A2B03A6AC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,3,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="alt_min" id="9D80725B-D19F-7E9E-539C-EEEA4B97D0C7">
+<createdBy>labsfiap</createdBy>
+<createdTime>2026-08-14 12:15:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[altura minima para a pessoa entrar no brinquedo]]></commentInRDBMS>
+<ownerDesignName>base_de_dados_parque_diversao</ownerDesignName>
+<engineerTo>
+<item key="C1850D45-28AA-F176-BC22-560A2B03A6AC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,1,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idade_min" id="CDCDCDBD-8786-3523-C9FB-871392C4D21C">
+<createdBy>labsfiap</createdBy>
+<createdTime>2026-08-14 12:15:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[idade minima para a pessoa entrar no brinquedo]]></commentInRDBMS>
+<ownerDesignName>base_de_dados_parque_diversao</ownerDesignName>
+<engineerTo>
+<item key="C1850D45-28AA-F176-BC22-560A2B03A6AC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="AD4AA2A0-0AE6-B273-6B55-6A33DDFC4E69" name="lista_brinqd PK">
+<createdBy>labsfiap</createdBy>
+<createdTime>2026-08-14 12:13:16 UTC</createdTime>
+<ownerDesignName>base_de_dados_parque_diversao</ownerDesignName>
+<engineerTo>
+<item key="C1850D45-28AA-F176-BC22-560A2B03A6AC" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>35FE4DF9-9DCF-82E5-FD86-88DD8E0065EA</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E0CC2EEA-2BF6-259D-BD1C-07BC092DB1AA" name="lista_brinqd">
+<createdBy>labsfiap</createdBy>
+<createdTime>2026-08-14 12:23:25 UTC</createdTime>
+<generatorID>CD8AC076-55EF-D65D-5332-DAD27C584ED1</generatorID>
+<ownerDesignName>base_de_dados_parque_diversao</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_brinqd" id="49506292-42E2-C4CF-2A4C-1A9B7ACEEFB9">
+<createdBy>labsfiap</createdBy>
+<createdTime>2026-08-14 12:23:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[id do brinquedo]]></commentInRDBMS>
+<generatorID>35FE4DF9-9DCF-82E5-FD86-88DD8E0065EA</generatorID>
+<ownerDesignName>base_de_dados_parque_diversao</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nome_brinqd" id="95EDEA25-D53B-CCA7-0415-9194CE0C9679">
+<createdBy>labsfiap</createdBy>
+<createdTime>2026-08-14 12:23:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[nome do brinquedo]]></commentInRDBMS>
+<generatorID>B9FC0ED0-ED5A-B1AE-E9A5-C921E794488B</generatorID>
+<ownerDesignName>base_de_dados_parque_diversao</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="valor_unit" id="F113E50B-4852-7288-9F2F-1D0460CCD1FD">
+<createdBy>labsfiap</createdBy>
+<createdTime>2026-08-14 12:23:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[valor cobrado pelo ingresso individual]]></commentInRDBMS>
+<generatorID>0C838938-C3A8-2DCD-BEC3-4DF2C6DCEF71</generatorID>
+<ownerDesignName>base_de_dados_parque_diversao</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,3,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="alt_min" id="D49D9E21-58C8-8A57-2548-145073DF5268">
+<createdBy>labsfiap</createdBy>
+<createdTime>2026-08-14 12:23:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[altura minima para a pessoa entrar no brinquedo]]></commentInRDBMS>
+<generatorID>9D80725B-D19F-7E9E-539C-EEEA4B97D0C7</generatorID>
+<ownerDesignName>base_de_dados_parque_diversao</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,1,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="idade_min" id="77617069-3952-4F7C-C3A3-A5EBB86EB930">
+<createdBy>labsfiap</createdBy>
+<createdTime>2026-08-14 12:23:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[idade minima para a pessoa entrar no brinquedo]]></commentInRDBMS>
+<generatorID>CDCDCDBD-8786-3523-C9FB-871392C4D21C</generatorID>
+<ownerDesignName>base_de_dados_parque_diversao</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="47EC260C-8F0D-A818-26DE-7C8252049E2D" name="lista_brinqd_PK">
+<createdBy>labsfiap</createdBy>
+<createdTime>2026-08-14 12:23:25 UTC</createdTime>
+<generatorID>AD4AA2A0-0AE6-B273-6B55-6A33DDFC4E69</generatorID>
+<ownerDesignName>base_de_dados_parque_diversao</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="49506292-42E2-C4CF-2A4C-1A9B7ACEEFB9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,6 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="Table" objectID="E0CC2EEA-2BF6-259D-BD1C-07BC092DB1AA" name="lista_brinqd" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.Table" propertyParentId="C1850D45-28AA-F176-BC22-560A2B03A6AC" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Table" objectID="97AE4E1B-88D3-8B31-F8D4-38C0042E9E25" name="local_brinqd" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.Table" propertyParentId="C1850D45-28AA-F176-BC22-560A2B03A6AC" propertySourceId="" propertyTargetId=""/>
+   <object objectType="FKIndexAssociation" objectID="1F5DB754-1044-815B-2B4A-96B89C254D9E" name="local_brinqd_lista_brinqd_FK" seqName="seg_0" containerID="97AE4E1B-88D3-8B31-F8D4-38C0042E9E25" refContainerID="E0CC2EEA-2BF6-259D-BD1C-07BC092DB1AA" propertyClassName="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" propertyParentId="C1850D45-28AA-F176-BC22-560A2B03A6AC" propertySourceId="E0CC2EEA-2BF6-259D-BD1C-07BC092DB1AA" propertyTargetId="97AE4E1B-88D3-8B31-F8D4-38C0042E9E25"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

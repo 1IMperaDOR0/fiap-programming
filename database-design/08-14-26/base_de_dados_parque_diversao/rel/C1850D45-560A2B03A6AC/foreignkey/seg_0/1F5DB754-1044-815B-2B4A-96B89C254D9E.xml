@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="1F5DB754-1044-815B-2B4A-96B89C254D9E" containerWithKeyObject="97AE4E1B-88D3-8B31-F8D4-38C0042E9E25" localFKIndex="63AEAE6F-BCA8-7D31-CF3E-C9681943E049" name="local_brinqd_lista_brinqd_FK">
+<createdBy>labsfiap</createdBy>
+<createdTime>2026-08-14 12:23:25 UTC</createdTime>
+<generatorID>02FE9084-C675-40AB-171A-884E0F45B428</generatorID>
+<ownerDesignName>base_de_dados_parque_diversao</ownerDesignName>
+<referredTableLongName>lista_brinqd</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E0CC2EEA-2BF6-259D-BD1C-07BC092DB1AA</referredTableID>
+<keyObject>47EC260C-8F0D-A818-26DE-7C8252049E2D</keyObject>
+<referredKeyID>47EC260C-8F0D-A818-26DE-7C8252049E2D</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_brinqd</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

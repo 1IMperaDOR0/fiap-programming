@@ -1,0 +1,129 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="97AE4E1B-88D3-8B31-F8D4-38C0042E9E25" name="local_brinqd">
+<createdBy>labsfiap</createdBy>
+<createdTime>2026-08-14 12:23:25 UTC</createdTime>
+<generatorID>4B3DECC1-0435-2953-3EE0-56E6D8067510</generatorID>
+<ownerDesignName>base_de_dados_parque_diversao</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_local" id="E62A2D18-02A8-800D-3D12-7B2218AC3982">
+<createdBy>labsfiap</createdBy>
+<createdTime>2026-08-14 12:23:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[id da localizacao do brinquedo no parque]]></commentInRDBMS>
+<generatorID>280A942E-7A53-596F-5FBA-6B2FEBB5480E</generatorID>
+<ownerDesignName>base_de_dados_parque_diversao</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descr_loc" id="52FBE15B-4E0B-8F27-60D0-ABAE4E1B31A6">
+<createdBy>labsfiap</createdBy>
+<createdTime>2026-08-14 12:23:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[ponto de referencia]]></commentInRDBMS>
+<generatorID>F9221CC8-7CB1-FDD8-C6E5-39A2328E5763</generatorID>
+<ownerDesignName>base_de_dados_parque_diversao</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="bairro" id="075B78DC-3E0F-6632-CD14-22F42622E850">
+<createdBy>labsfiap</createdBy>
+<createdTime>2026-08-14 12:23:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[area da localicao do brinquedo]]></commentInRDBMS>
+<generatorID>A00FC936-F3AA-4C92-1414-F65CA6EC5D39</generatorID>
+<ownerDesignName>base_de_dados_parque_diversao</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rua" id="A4B17E38-A6A7-09A0-41D0-2D6B33977C0A">
+<createdBy>labsfiap</createdBy>
+<createdTime>2026-08-14 12:23:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[alameda onde o brinquedo esta localizado]]></commentInRDBMS>
+<generatorID>46B43063-E537-30F8-EF40-F6F89BA82D62</generatorID>
+<ownerDesignName>base_de_dados_parque_diversao</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="numero" id="8CFAE734-C921-50C7-CE16-86456A50D4CF">
+<createdBy>labsfiap</createdBy>
+<createdTime>2026-08-14 12:23:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[numero da alameda da localizacao]]></commentInRDBMS>
+<generatorID>D50CB31B-C1CB-BD6E-60D1-28EB106C2BAA</generatorID>
+<ownerDesignName>base_de_dados_parque_diversao</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="lista_brinqd_id_brinqd" id="D1308DD1-E02B-202D-1CCB-3E7E8DE505E6">
+<createdBy>labsfiap</createdBy>
+<createdTime>2026-08-14 12:23:25 UTC</createdTime>
+<generatorID>E96F1C11-87F5-AC46-DD09-4B280FFF5A6D</generatorID>
+<ownerDesignName>base_de_dados_parque_diversao</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1F5DB754-1044-815B-2B4A-96B89C254D9E" referredColumn="49506292-42E2-C4CF-2A4C-1A9B7ACEEFB9"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="39CF920C-DFE6-6E4A-C316-7CC06A9CE677" name="local_brinqd_PK">
+<createdBy>labsfiap</createdBy>
+<createdTime>2026-08-14 12:23:25 UTC</createdTime>
+<generatorID>3B5A8D6F-FBE8-F05A-6C5C-93A7412D674B</generatorID>
+<ownerDesignName>base_de_dados_parque_diversao</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E62A2D18-02A8-800D-3D12-7B2218AC3982"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B3955BF1-7BB1-4C75-7A93-12CC6D246C92" name="local_brinqd__IDX">
+<createdBy>labsfiap</createdBy>
+<createdTime>2026-08-14 12:23:25 UTC</createdTime>
+<ownerDesignName>base_de_dados_parque_diversao</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>02FE9084-C675-40AB-171A-884E0F45B428</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="D1308DD1-E02B-202D-1CCB-3E7E8DE505E6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="63AEAE6F-BCA8-7D31-CF3E-C9681943E049" name="local_brinqd_lista_brinqd_FK">
+<createdBy>labsfiap</createdBy>
+<createdTime>2026-08-14 12:23:25 UTC</createdTime>
+<generatorID>02FE9084-C675-40AB-171A-884E0F45B428</generatorID>
+<ownerDesignName>base_de_dados_parque_diversao</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D1308DD1-E02B-202D-1CCB-3E7E8DE505E6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

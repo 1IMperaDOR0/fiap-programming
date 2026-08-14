@@ -1,0 +1,118 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4B3DECC1-0435-2953-3EE0-56E6D8067510" name="local_brinqd">
+<createdBy>labsfiap</createdBy>
+<createdTime>2026-08-14 12:16:32 UTC</createdTime>
+<ownerDesignName>base_de_dados_parque_diversao</ownerDesignName>
+<engineerTo>
+<item key="C1850D45-28AA-F176-BC22-560A2B03A6AC" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_local" id="280A942E-7A53-596F-5FBA-6B2FEBB5480E">
+<createdBy>labsfiap</createdBy>
+<createdTime>2026-08-14 12:16:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[id da localizacao do brinquedo no parque]]></commentInRDBMS>
+<ownerDesignName>base_de_dados_parque_diversao</ownerDesignName>
+<engineerTo>
+<item key="C1850D45-28AA-F176-BC22-560A2B03A6AC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descr_loc" id="F9221CC8-7CB1-FDD8-C6E5-39A2328E5763">
+<createdBy>labsfiap</createdBy>
+<createdTime>2026-08-14 12:17:19 UTC</createdTime>
+<commentInRDBMS><![CDATA[ponto de referencia]]></commentInRDBMS>
+<ownerDesignName>base_de_dados_parque_diversao</ownerDesignName>
+<engineerTo>
+<item key="C1850D45-28AA-F176-BC22-560A2B03A6AC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="bairro" id="A00FC936-F3AA-4C92-1414-F65CA6EC5D39">
+<createdBy>labsfiap</createdBy>
+<createdTime>2026-08-14 12:18:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[area da localicao do brinquedo]]></commentInRDBMS>
+<ownerDesignName>base_de_dados_parque_diversao</ownerDesignName>
+<engineerTo>
+<item key="C1850D45-28AA-F176-BC22-560A2B03A6AC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rua" id="46B43063-E537-30F8-EF40-F6F89BA82D62">
+<createdBy>labsfiap</createdBy>
+<createdTime>2026-08-14 12:18:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[alameda onde o brinquedo esta localizado]]></commentInRDBMS>
+<ownerDesignName>base_de_dados_parque_diversao</ownerDesignName>
+<engineerTo>
+<item key="C1850D45-28AA-F176-BC22-560A2B03A6AC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="numero" id="D50CB31B-C1CB-BD6E-60D1-28EB106C2BAA">
+<createdBy>labsfiap</createdBy>
+<createdTime>2026-08-14 12:19:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[numero da alameda da localizacao]]></commentInRDBMS>
+<ownerDesignName>base_de_dados_parque_diversao</ownerDesignName>
+<engineerTo>
+<item key="C1850D45-28AA-F176-BC22-560A2B03A6AC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_brinqd" id="E96F1C11-87F5-AC46-DD09-4B280FFF5A6D">
+<createdBy>labsfiap</createdBy>
+<createdTime>2026-08-14 12:21:49 UTC</createdTime>
+<generatorID>02FE9084-C675-40AB-171A-884E0F45B428</generatorID>
+<ownerDesignName>base_de_dados_parque_diversao</ownerDesignName>
+<engineerTo>
+<item key="C1850D45-28AA-F176-BC22-560A2B03A6AC" value="true"/>
+</engineerTo>
+<referedAttribute>35FE4DF9-9DCF-82E5-FD86-88DD8E0065EA</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3B5A8D6F-FBE8-F05A-6C5C-93A7412D674B" name="local_brinqd PK">
+<createdBy>labsfiap</createdBy>
+<createdTime>2026-08-14 12:16:57 UTC</createdTime>
+<ownerDesignName>base_de_dados_parque_diversao</ownerDesignName>
+<engineerTo>
+<item key="C1850D45-28AA-F176-BC22-560A2B03A6AC" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>280A942E-7A53-596F-5FBA-6B2FEBB5480E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

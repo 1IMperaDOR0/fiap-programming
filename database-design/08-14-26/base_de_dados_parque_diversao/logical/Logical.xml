@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="A87DE234-83BB-DCEF-3590-6C5972406427" mainViewID="F7E8B17C-4AD8-0A7E-8AE7-009B4B8FF04B">
+<createdBy>labsfiap</createdBy>
+<createdTime>2026-08-14 12:10:43 UTC</createdTime>
+<ownerDesignName>base_de_dados_parque_diversao</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>
