@@ -1,6 +1,7 @@
 package br.com.fiap.dao;
 
 import br.com.fiap.dto.Carro;
+import br.com.fiap.dto.Cliente;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -8,10 +9,10 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-public class CarroDAO {
+public class ClienteDAO {
     private Connection con;
 
-    public CarroDAO(Connection con) {
+    public ClienteDAO(Connection con) {
         this.con = con;
     }
 
@@ -19,12 +20,12 @@ public class CarroDAO {
         return con;
     }
 
-    public String inserir(Carro carro) {
-        String sql = "insert into ddd_carro(placa,cor,descricao) values(?,?,?)";
+    public String inserir(Cliente cliente) {
+        String sql = "insert into ddd_cliente(id_cliente,nome_cliente,placa) values(?,?,?)";
         try (PreparedStatement ps = getCon().prepareStatement(sql);) {
-            ps.setString(1, carro.getPlaca());
-            ps.setString(2, carro.getCor());
-            ps.setString(3, carro.getDescricao());
+            ps.setInt(1, cliente.getIdCliente());
+            ps.setString(2, cliente.getNomeCliente());
+            ps.setString(3, cliente.getPlaca());
             if (ps.executeUpdate() > 0) {
                 return "Inserido com sucesso.";
             } else {
@@ -35,12 +36,12 @@ public class CarroDAO {
         }
     }
 
-    public String alterar(Carro carro) {
-        String sql = "update ddd_carro set cor = ?,descricao = ? where placa = ?";
+    public String alterar(Cliente cliente) {
+        String sql = "update ddd_cliente set id_cliente = ?,nome_cliente = ? where placa = ?";
         try (PreparedStatement ps = getCon().prepareStatement(sql);) {
-            ps.setString(1, carro.getCor());
-            ps.setString(2, carro.getDescricao());
-            ps.setString(3, carro.getPlaca());
+            ps.setInt(1, cliente.getIdCliente());
+            ps.setString(2, cliente.getNomeCliente());
+            ps.setString(3, cliente.getPlaca());
             if (ps.executeUpdate() > 0) {
                 return "Alterado com sucesso.";
             } else {
@@ -51,10 +52,10 @@ public class CarroDAO {
         }
     }
 
-    public String excluir(Carro carro) {
-        String sql = "delete from ddd_carro where placa = ?";
+    public String excluir(Cliente cliente) {
+        String sql = "delete from ddd_cliente where placa = ?";
         try (PreparedStatement ps = getCon().prepareStatement(sql);) {
-            ps.setString(1, carro.getPlaca());
+            ps.setString(1, cliente.getPlaca());
             if (ps.executeUpdate() > 0) {
                 return "Excluído com sucesso.";
             } else {
@@ -65,22 +66,22 @@ public class CarroDAO {
         }
     }
 
-    public ArrayList<Carro> listarTodos() {
-        String sql = "select * from ddd_carro order by placa";
-        ArrayList<Carro> listaCarro = new ArrayList<>();
+    public ArrayList<Cliente> listarTodos() {
+        String sql = "select * from ddd_cliente order by placa";
+        ArrayList<Cliente> listaCliente = new ArrayList<>();
         try (
-            PreparedStatement ps = getCon().prepareStatement(sql);
-            ResultSet rs = ps.executeQuery();
+                PreparedStatement ps = getCon().prepareStatement(sql);
+                ResultSet rs = ps.executeQuery();
         ) {
             if (rs != null) {
                 while (rs.next()) {
-                    Carro carro = new Carro();
-                    carro.setPlaca(rs.getString(1));
-                    carro.setCor(rs.getString(2));
-                    carro.setDescricao(rs.getString(3));
-                    listaCarro.add(carro);
+                    Cliente cliente = new Cliente();
+                    cliente.setIdCliente(rs.getInt(1));
+                    cliente.setNomeCliente(rs.getString(2));
+                    cliente.setPlaca(rs.getString(3));
+                    listaCliente.add(cliente);
                 }
-                return listaCarro;
+                return listaCliente;
             } else {
                 return null;
             }
